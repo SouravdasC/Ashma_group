@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+
+  .management_details_banner {
+    background-image: url(https://jalangroupofindustries.com/wp-content/uploads/2022/09/title-bg5.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    padding: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    h2 {
+      color: white;
+      font-size: 3rem;
+      text-transform: uppercase;
+    }
+
+    div {
+      background-color: #f35c27;
+      padding: 2px;
+      width: 7vw;
+    }
+  }
+
+  /* MANAGEMENT  */
+  .management {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 3rem;
+
+    /* Card Styling */
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+      text-align: center;
+      width: 320px;
+      transition: transform 0.3s ease-in-out;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      border: 3px solid #007BFF;
+    }
+
+    .card h2 {
+      margin: 12px 0 5px;
+      font-size: 24px;
+      font-weight: 600;
+    }
+
+    .card h3 {
+      color: gray;
+      font-size: 16px;
+      margin-bottom: 12px;
+    }
+
+    /* Preview Text */
+    /* .preview-text {
+          color: #555;
+          font-size: 14px;
+        } */
+
+    /* Button Styling */
+    button {
+      margin-top: 15px;
+      padding: 12px;
+      width: 100%;
+      background: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Button Hover & Click Effects */
+    button:hover {
+      background: #0056b3;
+      transform: scale(1.05);
+    }
+
+    button:active {
+      transform: scale(0.98);
+    }
+
+    /* Hidden Text Section */
+    .hidden-text {
+      /* max-height: 0; */
+      display: none;
+      overflow: hidden;
+      opacity: 0;
+      transform: translateY(-10px);
+      transition: max-height 0.6s ease-in-out, opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+      /* color: gray; */
+      padding: 25px 0;
+      /* background: white;
+      border-radius: 15px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); */
+    }
+
+    /* When Active, Show the Text */
+    .hidden-text.show {
+      /* max-height: 150px; */
+      display: block;
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+/* GOOGLE FONTS  */
+
+.merriweather-bold {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.merriweather-bold-italic {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.merriweather-regular {
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.noto-serif-todhri-regular {
+  font-family: "Noto Serif Todhri", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* RESPONSIVE  */
+@media (max-width: 425px) {
+  section {
+    .management {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      grid-template-columns: auto;
+      gap: 1rem;
+
+      .card {
+        width: auto;
+      }
+    }
+  }
+}
+
+/* medium RESPONSIVE  */
+@media (min-width: 426px) and (max-width: 768px) {
+  section {
+    .management {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      grid-template-columns: auto auto;
+      gap: 1rem;
+
+      .card {
+        width: auto;
+      }
+    }
+  }
+}
+/* medium RESPONSIVE  */
+@media (min-width: 769px) and (max-width: 1024px) {
+  section {
+    .management {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      grid-template-columns: auto auto auto;
+      gap: 1rem;
+
+      .card {
+        width: auto;
+      }
+    }
+  }
+}
+  

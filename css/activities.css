@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+
+  .activities_banner {
+    background-image: url(https://jalangroupofindustries.com/wp-content/uploads/2022/09/title-bg5.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    padding: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    h2 {
+      color: white;
+      font-size: 3rem;
+      text-transform: uppercase;
+    }
+
+    div {
+      background-color: #f35c27;
+      padding: 2px;
+      width: 7vw;
+    }
+  }
+
+  .img_section{
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 2rem;
+    .swiper {
+        /* margin: 100px auto; */
+        width: 320px;
+        height: 240px;
+        margin: 0;
+      }
+    
+      .swiper-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 22px;
+        font-weight: bold;
+        color: #fff;
+      }
+    
+      .swiper-slide:nth-child(1n) {
+        background-color: rgb(206, 17, 17);
+      }
+    
+      .swiper-slide:nth-child(2n) {
+        background-color: rgb(0, 140, 255);
+      }
+    
+      .swiper-slide:nth-child(3n) {
+        background-color: rgb(10, 184, 111);
+      }
+    
+      .swiper-slide:nth-child(4n) {
+        background-color: rgb(211, 122, 7);
+      }
+    
+      .swiper-slide:nth-child(5n) {
+        background-color: rgb(118, 163, 12);
+      }
+    
+      .swiper-slide:nth-child(6n) {
+        background-color: rgb(180, 10, 47);
+      }
+    
+      .swiper-slide:nth-child(7n) {
+        background-color: rgb(35, 99, 19);
+      }
+    
+      .swiper-slide:nth-child(8n) {
+        background-color: rgb(0, 68, 255);
+      }
+    
+      .swiper-slide:nth-child(9n) {
+        background-color: rgb(218, 12, 218);
+      }
+    
+      .swiper-slide:nth-child(10n) {
+        background-color: rgb(54, 94, 77);
+      }
+  }
+}
+
+/* FONTS STYLE  */
+.merriweather-bold {
+  font-family: "Nunito Sans",sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.5rem;
+}
+
+.merriweather-light-italic {
+  font-family: "Nunito Sans",sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+/* RESPONSIVE  */
+/* MOBILE SCREEN  */
+@media (max-width: 425px){
+  section{
+
+    .img_section{
+      margin-top: 2rem;
+        margin-bottom: 2rem;
+        display: grid;
+        grid-template-columns: auto;
+        gap: 1.5rem;
+    }
+  }
+}
+
+/* MEDIUM DEVICE  */
+@media (min-width: 426px) and (max-width: 768px){
+  section {
+  
+      .img_section {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 1.5rem;
+      }
+    }
+}
+/* LARGE DEVICE  */
+@media (min-width: 769px) and (max-width: 1024px){
+  section {
+  
+      .img_section {
+        margin-top: 2rem 0;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 1rem;
+      }
+      .container{
+        margin: 2rem 0;
+      }
+    }
+}
+/* LARGE SCREEN  */
+@media (min-width: 769px) and (max-width: 1024px){
+  section {
+  
+      .img_section {
+        margin-top: 2rem 0;
+      }
+      .container{
+        margin: 2rem 0;
+      }
+    }
+}

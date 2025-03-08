@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Application Form</title>
+  <link rel="stylesheet" href="./css/details.css">
+</head>
+
+<body>
+  <section>
+    <div class="job_details_banner">
+      <h2>Apply Now</h2>
+      <div></div>
+    </div>
+
+    <!-- FORM  -->
+    <div class="container job_form">
+      <h2>Job Application</h2>
+      <form id="applicationForm">
+        <div class="input-group">
+          <input type="text" id="name" placeholder="Name *" required>
+        </div>
+        <div class="input-group">
+          <input type="email" id="email" placeholder="Email *" required>
+        </div>
+        <div class="input-group">
+          <input type="text" id="designation" placeholder="Designation *" required>
+        </div>
+        <div class="input-group">
+          <input type="tel" id="phone" placeholder="Phone Number *" required>
+        </div>
+        <div class="input-group">
+          <label>Upload your CV *</label>
+          <input type="file" id="cvUpload" class="file-upload" accept=".pdf,.doc,.docx" required>
+        </div>
+        <button type="submit" class="submit-btn">SUBMIT</button>
+      </form>
+    </div>
+  </section>
+  <script>
+    document.getElementById("applicationForm").addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      // Fetch values from input fields
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const designation = document.getElementById("designation").value;
+      const phone = document.getElementById("phone").value;
+      const cvFile = document.getElementById("cvUpload").files[0];
+
+      // Basic validation
+      if (!cvFile) {
+        alert("Please upload your CV.");
+        return;
+      }
+
+      // Simulated form submission
+      alert("Application Submitted Successfully!\n\n" +
+        "Name: " + name + "\n" +
+        "Email: " + email + "\n" +
+        "Designation: " + designation + "\n" +
+        "Phone: " + phone + "\n" +
+        "CV: " + cvFile.name);
+
+      // Reset the form
+      document.getElementById("applicationForm").reset();
+    });
+  </script>
+
+</body>
+
+</html>

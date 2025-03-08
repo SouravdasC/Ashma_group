@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.career_section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  .career_banner {
+    img {
+      width: -webkit-fill-available;
+    }
+  }
+
+  .container {
+    /* JOB SECTION  */
+    .container_title {
+      text-align: center;
+      text-transform: capitalize;
+      font-size: 3rem;
+      text-decoration: underline 1px;
+    }
+
+    .card_section {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      gap: 2rem;
+      text-align: center;
+      /* margin: 5rem; */
+
+      .card {
+        border-radius: 17px 17px 0 0;
+        border: none;
+        background-color: #e7e0e2;
+        width: 25rem;
+
+        img {
+          border-radius: 17px 17px 0 0;
+        }
+
+        .card-body {
+          button {
+            background-color: #ff6900;
+            border: none;
+            border-radius: 30px;
+            transition: background-color ease-in-out;
+
+            &:hover {
+              background-color: #c7804d;
+            }
+
+            a {
+              color: white;
+              text-transform: capitalize;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+    }
+
+    /* Life at Ashma Group */
+    .ashma_life {
+      margin-top: 4rem;
+
+      /* .card_slider {
+        border: 1px solid gray;
+        box-shadow: 10px 10px 17px gray
+      } */
+
+      .swiper {
+        width: 370px;
+        height: 320px;
+      }
+
+      .swiper-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* border-radius: 18px; */
+        font-size: 22px;
+        font-weight: bold;
+        color: #fff;
+      }
+
+      .swiper-slide:nth-child(1n) {
+        background-color: rgb(206, 17, 17);
+      }
+
+      .swiper-slide:nth-child(2n) {
+        background-color: rgb(0, 140, 255);
+      }
+
+      .swiper-slide:nth-child(3n) {
+        background-color: rgb(10, 184, 111);
+      }
+
+      .swiper-slide:nth-child(4n) {
+        background-color: rgb(211, 122, 7);
+      }
+
+      .swiper-slide:nth-child(5n) {
+        background-color: rgb(118, 163, 12);
+      }
+
+      .swiper-slide:nth-child(6n) {
+        background-color: rgb(180, 10, 47);
+      }
+
+      .swiper-slide:nth-child(7n) {
+        background-color: rgb(35, 99, 19);
+      }
+
+      .swiper-slide:nth-child(8n) {
+        background-color: rgb(0, 68, 255);
+      }
+
+      .swiper-slide:nth-child(9n) {
+        background-color: rgb(218, 12, 218);
+      }
+
+      .swiper-slide:nth-child(10n) {
+        background-color: rgb(54, 94, 77);
+      }
+
+      h1 {
+        background-color: #f35c27;
+        font-size: 24px;
+        text-align: center;
+        padding: 0.5rem 0;
+        color: white;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+/* FONTS STYLE  */
+.merriweather-bold {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.3rem;
+}
+
+.merriweather-light-italic {
+  font-family: "Merriweather", serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+/* RESPONSIVE ================================ */
+/* MOBILE SCXREEN  */
+@media (max-width: 425px) {
+  .career_section {
+    .container {
+      .card_section {
+        grid-template-columns: auto;
+        .card {
+          width: 22rem;
+        }
+      }
+
+      .container_title {
+        font-size: 1.8rem;
+      }
+
+      .ashma_life {
+        .swiper {
+          width: 320px;
+          /* height: auto; */
+        }
+      }
+    }
+  }
+}
+/* medium device  */
+@media (min-width: 426px) and (max-width: 768px) {
+  .career_section {
+    .container {
+      .card_section {
+        grid-template-columns: auto auto;
+
+        .card {
+          width: 20rem;
+        }
+      }
+      .ashma_life {
+        .swiper {
+          width: 285px;
+        }
+      }
+    }
+  }
+}

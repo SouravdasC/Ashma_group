@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  .company_details_banner {
+    background-image: url(https://jalangroupofindustries.com/wp-content/uploads/2022/09/title-bg5.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    padding: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    h2 {
+      color: white;
+      font-size: 3rem;
+      text-transform: uppercase;
+    }
+
+    div {
+      background-color: #f35c27;
+      padding: 2px;
+      width: 7vw;
+    }
+  }
+
+  /* ABOUT US  */
+  .company_about {
+
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+
+    h4 {
+      text-transform: capitalize;
+      text-transform: capitalize;
+      font-family: "Merriweather", serif;
+      font-weight: 700;
+      font-style: italic;
+    }
+
+    .about_heading {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      margin-bottom: 2rem;
+
+      h2 {
+        text-transform: uppercase;
+        font-family: "Merriweather", serif;
+        font-weight: 700;
+        font-style: normal;
+      }
+
+      h4 {
+        text-transform: capitalize;
+        font-family: "Merriweather", serif;
+        font-weight: 700;
+        font-style: italic;
+      }
+    }
+
+    /* DETAILS  */
+    .company_content_info {
+
+      display: flex;
+      flex-direction: column;
+      /* flex-wrap: wrap-reverse; */
+      gap: 3rem;
+
+      .company_details {
+        display: flex;
+        gap: 2rem;
+
+        p {
+          letter-spacing: 1px;
+          color: rgb(141, 138, 138);
+        }
+      }
+    }
+  }
+}
+
+/* GOOGLE FONTS  */
+
+.merriweather-bold {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.merriweather-bold-italic {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.merriweather-regular {
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.noto-serif-todhri-regular {
+  font-family: "Noto Serif Todhri", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* RESPONSIVE  */
+/* @media (min-width: 2400px) {
+  .container {
+    max-width: 1620px;
+  }
+} */
+
+/* RESPONSIVE  */
+/* mobile screen  */
+
+@media (max-width: 768px){
+  section{
+
+    /* ABOUT US  */
+    .company_about{
+
+      /* DETAILS */
+      .company_content_info{
+        .company_details{
+          flex-direction: column;
+
+          p{
+            font-size: small;
+          }
+        }
+      }
+    }
+  }
+}
