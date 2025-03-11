@@ -5,3 +5,15 @@
 #0328794a
 
 "Nunito Sans", sans-serif
+
+
+#1323a5
+
+#04347b
+
+bg: #084399
+
+color: #bbb4b4;
+
+h2_color: #b98f26
+banner_img: 50vw
