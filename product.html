@@ -7,19 +7,180 @@
   <title>Product</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <!-- GOOGLE FONTS  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&family=Liter&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Monomakh&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Todhri&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:wght@300..800&family=Oswald&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wdth,wght@0,75,100..900;1,75,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sigmar&family=Smooch+Sans:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-      rel="stylesheet">
+  <!-- GOOGLE FONTS  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&family=Liter&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Monomakh&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Todhri&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:wght@300..800&family=Oswald&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wdth,wght@0,75,100..900;1,75,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sigmar&family=Smooch+Sans:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
   <!-- CSS  -->
   <link rel="stylesheet" href="./css/product.css">
   <!-- AOS  -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- FONT AWSOME  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
+  <!-- HEADER ===================================================================== -->
+  <header>
+    <!-- NAVBAR ================================================================ -->
+    <navbar>
+      <a href="./home.html">
+        <img src="./images/logo6.png" alt="logo">
+      </a>
+      <ul class="navbarMenu">
+        <li class="menu-items">
+          <a href="./home.html" class="menu-link">home</a>
+        </li>
+        <li class="menu-items">
+          <a href="./ourCompany.html" class="menu-link">about us</a>
+          <ul class="submenu-items">
+            <li>
+              <a href="./ourCompany.html" class="">our company</a>
+            </li>
+            <li>
+              <a href="./ourManagement.html">our management</a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu-items">
+          <a href="" class="menu-link">our work</a>
+          <ul class="submenu-items">
+            <li>
+              <a href="./product.html">product & project</a>
+            </li>
+            <li>
+              <a href="./futurePlan.html">future plan</a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu-items">
+          <a href="" class="menu-link">gallery</a>
+          <ul class="submenu-items">
+            <li>
+              <a href="./galleryProject.html">our project</a>
+            </li>
+            <li>
+              <a href="./activities.html">our activities</a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu-items">
+          <a href="./career.html" class="menu-link">career</a>
+        </li>
+        <li class="menu-items">
+          <a href="./contact.html" class="menu-link">contact us</a>
+        </li>
+      </ul>
+
+    </navbar>
+    <!-- COMPANY SOCIAL MENU  -->
+    <div class="compnay_details">
+      <div class="company_header_socialMenu">
+        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+        <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+      <div class="company_contact_details">
+        <div>
+          <a href="mailto:enquiry@ashmamotors.com">
+            <i class="fa-regular fa-envelope"></i>
+            enquiry@ashmamotors.com
+          </a>
+        </div>
+        <div>
+          <a href="tel:+918697185501">
+            <i class="fa-solid fa-phone"></i>
+            +91 8697185501 (Director)
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- RESPONSIVE ================ -->
+    <div class="toggleMenu">
+      <div class="">
+        <a href="">
+          <img src="https://ashmamotors.com/images/footer-logo.png" alt="logo">
+        </a>
+        <button class="menu-btn" onclick="toggleSidebar()">&#9776;</i></button>
+        <ul class="sidebar" id="sidebar">
+          <li class="menu-items">
+            <a href="" class="menu-link">home</a>
+          </li>
+          <li class="menu-items">
+            <a href="/about" class="menu-link" onclick="toggleSubmenu(event, 'submenu1')">
+              about us<i class="fa-solid fa-caret-down"></i>
+            </a>
+            <ul class="submenu" id="submenu1">
+              <li>
+                <a href="./ourCompany.html" class="noto-serif-todhri-regular">our company</a>
+              </li>
+              <li>
+                <a href="./ourManagement.html" class="noto-serif-todhri-regular">our management</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-items">
+            <a href="./product.html" class="menu-link" onclick="toggleSubmenu(event, 'submenu2')">our work<i
+                class="fa-solid fa-caret-down"></i></a>
+            <ul class="submenu" id="submenu2">
+              <li>
+                <a href="./product.html" class="noto-serif-todhri-regular">product & project</a>
+              </li>
+              <li>
+                <a href="./futurePlan.html" class="noto-serif-todhri-regular">future plan</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-items">
+            <a href="" class="menu-link" onclick="toggleSubmenu(event, 'submenu3')">gallery<i
+                class="fa-solid fa-caret-down"></i></a>
+            <ul class="submenu" id="submenu3">
+              <li>
+                <a href="">our project</a>
+              </li>
+              <li>
+                <a href="">our activities</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-items">
+            <a href="" class="menu-link">career</a>
+          </li>
+          <li class="menu-items">
+            <a href="" class="menu-link">contact us</a>
+          </li>
+          <!-- COMPANY SOCIAL MENU  -->
+          <li class="responsive_socialMenu">
+            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+          </li>
+          <div class="responsive_company_details">
+            <div>
+              <a href="mailto:enquiry@ashmamotors.com">
+                <i class="fa-regular fa-envelope"></i>
+                enquiry@ashmamotors.com
+              </a>
+            </div>
+            <div>
+              <a href="tel:+918697185501">
+                <i class="fa-solid fa-phone"></i>
+                +91 8697185501 (Director)
+              </a>
+            </div>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <div class="border-text"></div>
+
   <section>
     <!-- BANNER  -->
     <div class="product_details_banner">
@@ -34,126 +195,648 @@
         <!-- CONTENT_1 -->
         <div class="product_content product_conetnt_flex" data-aos="zoom-in">
           <div class="product_details">
-            <h5 class="merriweather-bold">Sponge Iron</h5>
-            <p class="merriweather-regular">Sponge Iron is obtained by direct reduction (elimination of oxygen) of iron
-              ore without melting it in a
-              blast furnace.
-              Sponge iron is an intermediate iron product used as substitute for steel scrap while producing steel
-              through the
-              electric induction furnace route. The entire production of Sponge Iron is consumed in-house for
-              manufacturing MS
-              Billets.</p>
-            <button class="button">
-              <a href="./contact.html">get in touch</a>
-            </button>
+            <h5 class="merriweather-bold">ASHMA A1</h5>
+            <p class="merriweather-regular">Gear up to experience the electric auto rickshaw packed with industry-first
+              features & advanced technology
+              Ashma A1 E-Rickshaw – Smart, Powerful & Eco-Friendly Ride 🚲🔋
+              Experience the future of urban transportation with the Ashma A1 E-Rickshaw – designed for efficiency,
+              comfort, and
+              profitability. With its powerful electric motor, long battery life, and zero-emission technology, the A1
+              E-Rickshaw is
+              the perfect solution for eco-friendly and cost-effective transportation.
+            </p>
+            <button class="button" onclick="openModal('specModal1')">KNOW MORE</button>
           </div>
           <div>
-            <img src="https://gallantt.com/wp-content/uploads/2019/05/Product-shots-sponge-balls-570X436-436X570.jpg"
-              alt="img_1">
+            <img src="https://ashmamotors.com/demo/images/details_ashma_a1.png" alt="img_1">
           </div>
         </div>
         <!-- CONTENT_2 -->
         <div class="product_content " data-aos="zoom-in">
           <div>
-            <img src="https://gallantt.com/wp-content/uploads/2019/05/Product-shots-sponge-balls-570X436-436X570.jpg"
-              alt="img_1">
+            <img src="https://ashmamotors.com/demo/images/details_ashma_super.png" alt="img_2">
           </div>
           <div class="product_details">
-            <h5 class="merriweather-bold">Sponge Iron</h5>
-            <p class="merriweather-regular">Sponge Iron is obtained by direct reduction (elimination of oxygen) of iron
-              ore without melting it in a
-              blast furnace.
-              Sponge iron is an intermediate iron product used as substitute for steel scrap while producing steel
-              through the
-              electric induction furnace route. The entire production of Sponge Iron is consumed in-house for
-              manufacturing MS
-              Billets.</p>
-            <button class="button">
-              <a href="">get in touch</a>
-            </button>
+            <h5 class="merriweather-bold">ASHMA SUPER</h5>
+            <p class="merriweather-regular">Ashma Super E-Rickshaw – Power, Comfort & Efficiency 🚲🔋
+              Introducing the Ashma Super E-Rickshaw – built for superior performance and maximum profitability. With
+              its high-powered
+              electric motor, long battery life, and rugged design, the Ashma Super is the perfect choice for passenger
+              transportation. Designed for comfort, durability, and eco-friendliness, it ensures a smooth and profitable
+              ride every
+              day.</p>
+            <button class="button" onclick="openModal('specModal2')">KNOW MORE</button>
           </div>
 
         </div>
         <!-- CONTENT_3 -->
         <div class="product_content product_conetnt_flex" data-aos="zoom-in">
           <div class="product_details">
-            <h5 class="merriweather-bold">Sponge Iron</h5>
-            <p class="merriweather-regular">Sponge Iron is obtained by direct reduction (elimination of oxygen) of iron
-              ore without melting it in a
-              blast furnace.
-              Sponge iron is an intermediate iron product used as substitute for steel scrap while producing steel
-              through the
-              electric induction furnace route. The entire production of Sponge Iron is consumed in-house for
-              manufacturing MS
-              Billets.</p>
-            <button class="button">
-              <a href="">get in touch</a>
-            </button>
+            <h5 class="merriweather-bold">ASHMA N1</h5>
+            <p class="merriweather-regular">The Ashma N1 E-Rickshaw is designed for maximum performance and higher
+              profitability. With its powerful electric motor,
+              long-lasting battery, and rugged build, it ensures a smooth, comfortable, and cost-effective ride every
+              day.</p>
+            <button class="button" onclick="openModal('specModal3')">KNOW MORE</button>
           </div>
           <div>
-            <img src="https://gallantt.com/wp-content/uploads/2019/05/Product-shots-sponge-balls-570X436-436X570.jpg"
-              alt="img_1">
+            <img src="https://ashmamotors.com/demo/images/details_ashma_n1.png" alt="img_3">
           </div>
         </div>
         <!-- CONTENT_4 -->
         <div class="product_content" data-aos="zoom-in">
           <div>
-            <img src="https://gallantt.com/wp-content/uploads/2019/05/Product-shots-sponge-balls-570X436-436X570.jpg"
-              alt="img_1">
+            <img src="https://ashmamotors.com/demo/images/product_slider_2.png" alt="img_4">
           </div>
           <div class="product_details">
-            <h5 class="merriweather-bold">Sponge Iron</h5>
-            <p class="merriweather-regular">Sponge Iron is obtained by direct reduction (elimination of oxygen) of iron
-              ore without melting it in a
-              blast furnace.
-              Sponge iron is an intermediate iron product used as substitute for steel scrap while producing steel
-              through the
-              electric induction furnace route. The entire production of Sponge Iron is consumed in-house for
-              manufacturing MS
-              Billets.</p>
-            <button class="button">
-              <a href="">get in touch</a>
-            </button>
+            <h5 class="merriweather-bold">loader</h5>
+            <p class="merriweather-regular">Ashma E-Loader – Powerful & Reliable Cargo Solution 🚛🔋
+              The Ashma E-Loader is built to handle heavy loads with ease, offering high performance, long battery life,
+              and low
+              operating costs. Perfect for businesses, it ensures maximum savings and eco-friendly transportation.</p>
+            <button class="button" onclick="openModal('specModal4')">KNOW MORE</button>
           </div>
 
         </div>
         <!-- CONTENT_5 -->
         <div class="product_content product_conetnt_flex" data-aos="zoom-in">
           <div class="product_details">
-            <h5 class="merriweather-bold">Sponge Iron</h5>
-            <p class="merriweather-regular">Sponge Iron is obtained by direct reduction (elimination of oxygen) of iron
-              ore without melting it in a
-              blast furnace.
-              Sponge iron is an intermediate iron product used as substitute for steel scrap while producing steel
-              through the
-              electric induction furnace route. The entire production of Sponge Iron is consumed in-house for
-              manufacturing MS
-              Billets.</p>
-            <button class="button">
-              <a href="">get in touch</a>
-            </button>
+            <h5 class="merriweather-bold">door loader</h5>
+            <p class="merriweather-regular">Ashma Door Loader – Smart & Heavy-Duty Solution 🚛🔋
+              The Ashma Door Loader is designed for efficient goods transportation, offering high load capacity,
+              powerful motor, and
+              long battery life. Ideal for daily commercial use, it ensures low operating cost and maximum profit.</p>
+            <button class="button" onclick="openModal('specModal5')">KNOW MORE</button>
           </div>
           <div>
-            <img src="https://gallantt.com/wp-content/uploads/2019/05/Product-shots-sponge-balls-570X436-436X570.jpg"
-              alt="img_1">
+            <img src="https://ashmamotors.com/demo/images/product_slider_7.png" alt="img_5">
           </div>
         </div>
-
-        <!-- FUTURE PAGE LINK  -->
+        <!-- CONTENT_6 -->
+        <div class="product_content product_conetnt_flex" data-aos="zoom-in">
+          <div>
+            <img src="https://ashmamotors.com/ashmagroup/images/companyJute.png" alt="img_6">
+          </div>
+          <div class="product_details">
+            <h5 class="merriweather-bold">jute</h5>
+            <p class="merriweather-regular">Ashma Jute Mill – Quality Jute Products, Trusted Manufacturing 🧵🌿
+              Ashma Jute Mill is a leading manufacturer of high-quality jute products, dedicated to eco-friendly
+              production and
+              sustainable solutions. We specialize in durable jute bags, fabrics, and raw materials for various
+              industries, ensuring
+              premium quality and timely delivery.</p>
+            <button class="button" onclick="openModal('specModal6')">KNOW MORE</button>
+          </div>
+        </div>
+        <!-- CONTENT_7 -->
+        <div class="product_content product_conetnt_flex" data-aos="zoom-in">
+          <div class="product_details">
+            <h5 class="merriweather-bold">construction</h5>
+            <p class="merriweather-regular">Ashma Construction – Building Dreams, Creating Reality 🏗️🏠
+              Ashma Construction is a trusted name in quality construction services, specializing in residential,
+              commercial, and
+              industrial projects. With a commitment to excellence, durability, and modern design, we turn dreams into
+              reality. Our
+              expert team ensures on-time delivery, superior quality, and affordable pricing.</p>
+            <button class="button" onclick="openModal('specModal7')">KNOW MORE</button>
+          </div>
+          <div>
+            <img src="https://ashmamotors.com/ashmagroup/images/companyConstruction.webp" alt="img_7">
+          </div>
+        </div>
+      </div>
+      <!-- FUTURE PAGE LINK  -->
+      <div class="pageLink container">
         <button class="button future_btn">
           <a href="./futurePlan.html">future &nbsp; plan</a>
         </button>
+        <button class="button future_btn">
+          <a href="./contact.html">get in touch</a>
+        </button>
       </div>
+    </div>
 
     </div>
 
 
   </section>
+
+
+  <!-- FOOTER================================================================================ -->
+  <footer class="footer">
+    <div class="footer_innerSection container">
+      <!-- company product details  -->
+      <div class="footer_product_details">
+        <div>
+          <!-- <h3>product</h3> -->
+          <div class="product_section">
+            <h3>Ashma E-rickshaw</h3>
+            <ul class="footer_eRikshaw">
+              <li class="item"><a href="">E-Rickshaw</a></li>
+              <li class="item"><a href="">E-loader</a></li>
+            </ul>
+          </div>
+          <div class="product_section">
+            <h3><a href=""><a href="">Ashma jute mill</a></h3>
+          </div>
+          <div class="product_section">
+            <h3><a href="">Ashma constraction</a></h3>
+          </div>
+
+        </div>
+        <div class="footer_usefulLinks">
+          <div class="product_section">
+            <h3>dealership</h3>
+            <ul class="footer_eRikshaw">
+              <li class="item"><a href="">become a dealer</a></li>
+              <li class="item"><a href="">FAQs</a></li>
+            </ul>
+          </div>
+          <div class="product_section">
+            <h3>useful links</h3>
+            <ul class="footer_eRikshaw">
+              <li class="item"><a href="">overview</a></li>
+              <li class="item"><a href="">our works</a></li>
+              <li class="item"><a href="">career</a></li>
+              <li class="item"><a href="">our team</a></li>
+              <li class="item"><a href="">our management</a></li>
+              <li class="item"><a href="">contact us</a></li>
+            </ul>
+          </div>
+          <div class="product_section">
+            <h3>shop</h3>
+            <ul class="footer_eRikshaw">
+              <li class="item"><a href="">Accessories</a></li>
+              <li class="item"><a href="">Merchandise</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- company contact info  -->
+      <div class="footer_company_info">
+        <div class="comapny_contact">
+          <div class="footerContact">
+            <h4>email</h4>
+            <div>
+              <a href="mailto:enquiry@ashmamotors.com">
+                <i class="fa-regular fa-envelope"></i>
+                enquiry@ashmamotors.com
+              </a>
+            </div>
+          </div>
+          <div class="footerContact">
+            <h4>contact</h4>
+            <div>
+              <a href="tel:+918697185501">
+                <i class="fa-solid fa-phone"></i>
+                +91 8697185501 (Director)
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footerSocialConnect">
+          <h4>follow us</h4>
+          <div class="company_footer_socialMenu">
+            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- branding -->
+      <div class="footerBranding">
+        <p>© ashma group. All Rights Reserved</p>
+        <a href="">Privacy Policy</a>
+        <a href="">Disclaimer</a>
+        <a href="">Cookie Policy</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- MODAL  -->
+  <div class="productModal container">
+    <!-- MODAL-1  -->
+    <div id="specModal1" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('specModal1')">&times;</span>
+        <h2>ASHMA A1 Specifications</h2>
+        <table class="spec-table">
+          <tbody>
+            <tr>
+              <th>Specification</th>
+              <th>Details</th>
+            </tr>
+            <tr>
+              <td>Seating Capacity</td>
+              <td>4 + 1 (Driver)</td>
+            </tr>
+            <tr>
+              <td>Load Capacity</td>
+              <td>520 KG</td>
+            </tr>
+            <tr>
+              <td>Speedo Meter</td>
+              <td>Digital Meter</td>
+            </tr>
+            <tr>
+              <td>Chassis Type</td>
+              <td>Strongest Anti-Rust Chassis</td>
+            </tr>
+            <tr>
+              <td>Motor Type</td>
+              <td>DC Motor</td>
+            </tr>
+            <tr>
+              <td>Motor Power</td>
+              <td>1200 W</td>
+            </tr>
+            <tr>
+              <td>Controller Battery</td>
+              <td>24 Tube (48 Volt / 50 AH)</td>
+            </tr>
+            <tr>
+              <td>Battery Capacity</td>
+              <td>130-160 AH</td>
+            </tr>
+            <tr>
+              <td>Battery Voltage</td>
+              <td>48 Volt (4 Battery)</td>
+            </tr>
+
+            <tr>
+              <td>Brake (Front &amp; Rear)</td>
+              <td>1000MM Front, Standard Drum Rear</td>
+            </tr>
+            <tr>
+              <td>Wheel Size (Front &amp; Rear)</td>
+              <td>3*75-12</td>
+            </tr>
+            <tr>
+              <td>Front Shock Absorber</td>
+              <td>30x14 mm Spring Shocker</td>
+            </tr>
+            <tr>
+              <td>Rear Shock Absorber</td>
+              <td>20 mm Shocker</td>
+            </tr>
+            <tr>
+              <td>Dimensions (L*W*H)</td>
+              <td>2800 x 1000 x 1800 (MM)</td>
+            </tr>
+          </tbody>
+        </table>
+        <a href="" target="_blank">more details</a>
+      </div>
+    </div>
+    <!-- MODAL-2  -->
+    <div id="specModal2" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('specModal2')">&times;</span>
+        <h2>ASHMA super Specifications</h2>
+        <table class="spec-table">
+          <tbody>
+            <tr>
+              <th>Specification</th>
+              <th>Details</th>
+            </tr>
+            <tr>
+              <td>Seating Capacity</td>
+              <td>4 + 1 (Driver)</td>
+            </tr>
+            <tr>
+              <td>Load Capacity</td>
+              <td>520 KG</td>
+            </tr>
+            <tr>
+              <td>Speedo Meter</td>
+              <td>Digital Meter</td>
+            </tr>
+            <tr>
+              <td>Chassis Type</td>
+              <td>Strongest Anti-Rust Chassis</td>
+            </tr>
+            <tr>
+              <td>Motor Type</td>
+              <td>DC Motor</td>
+            </tr>
+            <tr>
+              <td>Motor Power</td>
+              <td>1200 W</td>
+            </tr>
+            <tr>
+              <td>Controller Battery</td>
+              <td>24 Tube (48 Volt / 50 AH)</td>
+            </tr>
+            <tr>
+              <td>Battery Capacity</td>
+              <td>130-160 AH</td>
+            </tr>
+            <tr>
+              <td>Battery Voltage</td>
+              <td>48 Volt (4 Battery)</td>
+            </tr>
+            <tr>
+              <td>Tyre</td>
+              <td>1000 MM Front, Standard Drum Rear 3*75-12</td>
+            </tr>
+            <tr>
+              <td>Brake (Front &amp; Rear)</td>
+              <td>Drum Brakes</td>
+            </tr>
+            <tr>
+              <td>Wheel Size (Front &amp; Rear)</td>
+              <td>Front: 1000 MM, Rear: 3*75-12</td>
+            </tr>
+            <tr>
+              <td>Front Shock Absorber</td>
+              <td>30x14 mm Spring Shocker</td>
+            </tr>
+            <tr>
+              <td>Rear Shock Absorber</td>
+              <td>20 mm Shocker</td>
+            </tr>
+            <tr>
+              <td>Dimensions (L*W*H)</td>
+              <td>2800 x 1000 x 1800 (MM)</td>
+            </tr>
+          </tbody>
+        </table>
+        <a href="" target="_blank">more details</a>
+      </div>
+    </div>
+    <!-- MODAL-3  -->
+    <div id="specModal3" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('specModal3')">&times;</span>
+        <h2>ASHMA n1 Specifications</h2>
+        <table class="spec-table">
+          <tbody>
+            <tr>
+              <th>Specification</th>
+              <th>Details</th>
+            </tr>
+            <tr>
+              <td>Seating Capacity</td>
+              <td>4 + 1 (Driver)</td>
+            </tr>
+            <tr>
+              <td>Load Capacity</td>
+              <td>520 KG</td>
+            </tr>
+            <tr>
+              <td>Speedo Meter</td>
+              <td>Digital Meter</td>
+            </tr>
+            <tr>
+              <td>Moto Power</td>
+              <td>DC Moto / 1200 W</td>
+            </tr>
+            <tr>
+              <td>Controller</td>
+              <td>24 Tube (48 Volt / 55 AH)</td>
+            </tr>
+            <tr>
+              <td>Battery Voltage</td>
+              <td>48 Volt (4 Battery)</td>
+            </tr>
+            <tr>
+              <td>Brake (Front &amp; Rear)</td>
+              <td>1000 MM Front , Standard drum Rear</td>
+            </tr>
+            <tr>
+              <td>Wheel Size (Front &amp; Rear)</td>
+              <td> 3*75-12(Alloy / iron)</td>
+            </tr>
+            <tr>
+              <td>Front Shock Absorber</td>
+              <td>30x14 mm Spring Shocker</td>
+            </tr>
+            <tr>
+              <td>Dimensions (L*W*H)</td>
+              <td>2800 x 1000 x 1800 (MM)</td>
+            </tr>
+            <tr>
+              <td>Colour</td>
+              <td>Metalic</td>
+            </tr>
+            <tr>
+              <td>Chassis Type</td>
+              <td>Strongest Anti-Rust Chassis</td>
+            </tr>
+          </tbody>
+        </table>
+        <a href="" target="_blank">more details</a>
+      </div>
+    </div>
+    <!-- MODAL-4  -->
+    <div id="specModal4" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('specModal4')">&times;</span>
+        <h2>ASHMA loader Specifications</h2>
+        <table class="spec-table">
+          <tbody>
+            <tr>
+              <th>Specification</th>
+              <th>Details</th>
+            </tr>
+            <tr>
+              <td>Rim</td>
+              <td>Heavy Duty Iron Rim</td>
+            </tr>
+            <tr>
+              <td>Motor</td>
+              <td>BLDC 2000W 60V</td>
+            </tr>
+            <tr>
+              <td>Rear Axle</td>
+              <td>46 Inch Heavy Duty</td>
+            </tr>
+            <tr>
+              <td>Differerntial</td>
+              <td>46 Inch Differential</td>
+            </tr>
+            <tr>
+              <td>Brake</td>
+              <td>Drum Brake</td>
+            </tr>
+            <tr>
+              <td>Weight</td>
+              <td>320 KG (Without Battery)</td>
+            </tr>
+            <tr>
+              <td>Controller</td>
+              <td>2000W 60V</td>
+            </tr>
+            <tr>
+              <td>Shocker</td>
+              <td>43 MM heavy Duty (Hydraulic)</td>
+            </tr>
+            <tr>
+              <td>Battery Voltage</td>
+              <td>60 Volt (5 Battery)</td>
+            </tr>
+            <tr>
+              <td>Laod Capacity</td>
+              <td>1200 KG / 1500 KG</td>
+            </tr>
+
+          </tbody>
+        </table>
+        <a href="" target="_blank">more details</a>
+      </div>
+    </div>
+    <!-- MODAL-5  -->
+    <div id="specModal5" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('specModal5')">&times;</span>
+        <h2>ASHMA loader Specifications</h2>
+        <table class="spec-table">
+          <tbody>
+            <tr>
+              <th>Specification</th>
+              <th>Details</th>
+            </tr>
+            <tr>
+              <td>Seating Capacity</td>
+              <td>4 + 1 (Driver)</td>
+            </tr>
+            <tr>
+              <td>Load Capacity</td>
+              <td>520 KG</td>
+            </tr>
+            <tr>
+              <td>Speedo Meter</td>
+              <td>Digital Meter</td>
+            </tr>
+            <tr>
+              <td>Chassis Type</td>
+              <td>Strongest Anti-Rust Chassis</td>
+            </tr>
+            <tr>
+              <td>Motor Type</td>
+              <td>DC Motor</td>
+            </tr>
+            <tr>
+              <td>Motor Power</td>
+              <td>1200 W</td>
+            </tr>
+            <tr>
+              <td>Controller Battery</td>
+              <td>24 Tube (48 Volt / 50 AH)</td>
+            </tr>
+            <tr>
+              <td>Battery Capacity</td>
+              <td>130-160 AH</td>
+            </tr>
+            <tr>
+              <td>Battery Voltage</td>
+              <td>48 Volt (4 Battery)</td>
+            </tr>
+            <tr>
+              <td>Tyre</td>
+              <td>1000 MM Front, Standard Drum Rear 3*75-12</td>
+            </tr>
+            <tr>
+              <td>Brake (Front &amp; Rear)</td>
+              <td>Drum Brakes</td>
+            </tr>
+            <tr>
+              <td>Wheel Size (Front &amp; Rear)</td>
+              <td>Front: 1000 MM, Rear: 3*75-12</td>
+            </tr>
+            <tr>
+              <td>Front Shock Absorber</td>
+              <td>30x14 mm Spring Shocker</td>
+            </tr>
+            <tr>
+              <td>Rear Shock Absorber</td>
+              <td>20 mm Shocker</td>
+            </tr>
+            <tr>
+              <td>Dimensions (L*W*H)</td>
+              <td>2800 x 1000 x 1800 (MM)</td>
+            </tr>
+          </tbody>
+        </table>
+        <a href="" target="_blank">more details</a>
+      </div>
+    </div>
+    <!-- MODAL-6  -->
+    <div id="specModal6" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('specModal6')">&times;</span>
+        <h2>ASHMA jute Specifications</h2>
+        <p>
+          1️⃣ Jute Bags & Sacks
+          Gunny Bags – Used for storing grains, rice, wheat, and pulses.
+          Shopping Bags – Reusable and stylish alternative to plastic bags.
+          Coffee & Cocoa Bags – Export-quality sacks for packaging coffee and cocoa beans.<br>
+          2️⃣ Jute Fabrics & Textiles
+          Hessian Cloth – Lightweight, breathable fabric used for making sacks and crafts.
+          Canvas – Thick and durable jute fabric used for making bags, tents, and tarpaulins.
+          Jute Carpet Backing Cloth – Used as a base for carpets.<br>
+          3️⃣ Jute Ropes & Twines
+          Jute Twine – Used in agriculture, gardening, and handicrafts.
+          Jute Ropes – Strong and durable ropes used in construction and packaging.<br>
+          4️⃣ Home & Decorative Items
+          Jute Mats & Carpets – Used for flooring, rugs, and home decor.
+          Jute Curtains & Table Mats – Eco-friendly home decor products.<br>
+          5️⃣ Industrial & Agricultural Uses
+          Geo-Jute (Jute Geotextiles) – Used for soil erosion control and road construction.
+          Jute Felt – Used in soundproofing, insulation, and agriculture.
+        </p>
+        <a href="" target="_blank">more details</a>
+      </div>
+    </div>
+    <!-- MODAL-7  -->
+    <div id="specModal7" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('specModal7')">&times;</span>
+        <h2>ASHMA construction Specifications</h2>
+        <p>
+          Construction: A Medium Description
+          Construction is the process of building, assembling, or modifying structures such as houses, roads, bridges,
+          and
+          commercial buildings. It involves various stages, including planning, designing, material selection, and
+          execution. The
+          construction industry is crucial for infrastructure development and economic growth.<br>
+
+          <strong>Key Phases of Construction : </strong><br>
+          Planning & Design – Architects and engineers create blueprints and structural designs.
+          Site Preparation – Clearing land, leveling, and laying foundations.
+          Structural Work – Erecting frameworks, walls, roofing, and concrete structures.
+          Finishing & Utilities – Installing plumbing, electrical systems, and interior finishing.
+          Inspection & Handover – Quality checks ensure safety before final handover.<br>
+          <strong>Types of Construction : </strong><br>
+          Residential – Houses, apartments, and townships.
+          Commercial – Office buildings, malls, and hotels.
+          Infrastructure – Roads, bridges, railways, and tunnels.
+          Industrial – Factories, warehouses, and power plants.
+        </p>
+        <a href="" target="_blank">more details</a>
+      </div>
+    </div>
+
+  </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!-- AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init();
+  // MODAL 
+  function openModal(modalId) {
+    document.getElementById(modalId).style.display = "block";
+  }
+
+  function closeModal(modalId) {
+    document.getElementById(modalId).style.display = "none";
+  }
 </script>
+
 </html>

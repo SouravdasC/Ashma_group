@@ -179,23 +179,8 @@ header {
 
 /* HEADER END======================================================================== */
 
-/* CUSTOM CLASS  */
-.button {
-  padding: 10px 20px;
-  background-color: #084399;
-  color: #bbb4b4;
-  border: none;
-
-  &:hover {
-    border: 1px solid;
-    /* background-color: white; */
-    color: white;
-  }
-
-}
-
+/* SECTION START ==================================== */
 section {
-
   .product_details_banner {
     background-image: url(https://jalangroupofindustries.com/wp-content/uploads/2022/09/title-bg5.jpg);
     background-repeat: no-repeat;
@@ -221,88 +206,41 @@ section {
     }
   }
 
-  /* BODY  */
-  .body_content {
+  .mdMesseage {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
     margin-top: 6rem;
     margin-bottom: 6rem;
+    background-color: #084399;
+    padding: 2rem;
+    border-radius: 15px;
 
-    h2 {
-      text-decoration: underline;
-      text-decoration-thickness: 0.2px;
-      color: blueviolet;
+    h3 {
+      color: white;
+      font-family: "Merriweather", serif;
+      font-weight: 700;
+      font-style: normal;
     }
-
-    .product_content {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      gap: 2rem;
-      margin-top: 3rem;
-
-      h5 {
-        font-size: 2rem;
-        text-decoration: underline;
-        text-decoration-thickness: 1px;
-        text-transform: uppercase;
-      }
-
-      p {
-        font-size: 1rem;
-        color: gray;
-        text-transform: capitalize;
-        margin: 2rem 0;
-        text-align: justify;
-      }
-
-
-
-      img {
-        border-radius: 10px;
-        transition: all 0.2s;
-        width: 30vw;
-
-        &:hover {
-          transform: scale(1.1);
-          cursor: grab;
-        }
+    p{
+      text-align: justify;
+      margin-top: 2rem;
+      color: #bbb4b4;
+      font-weight: 500;
+      font-size: 15px;
+      &:hover{
+        color: white;
       }
     }
-
-    .pageLink {
-      display: flex;
-      align-items: center;
-      gap: 3rem;
-      justify-content: center;
-      margin-top: 6rem;
-      a{
-        text-decoration: none;
-        text-transform: capitalize;
-        font-weight: 500;
-        color: #bbb4b4;
-        &:hover{
-          color: white;
-        }
-      }
-    }
-
-    /* FUTURE PAGE LINK */
-    .future_btn {
-      /* margin: auto;
-      display: flex;
-      border-radius: 10px;
-      padding: 15px 25px;
-      font-size: 18px;
-      margin-top: 6rem; */
-    }
-
   }
 }
+
+/* SECTION END ==================================== */
 
 /* FOOTER START ================================================ */
 
 .footer {
-  background: url("./../images/footer_bgImg.jpg") no-repeat;
+  background: url("./../images/footer_bg.jpg") no-repeat;
   background-size: cover;
 
   .footer_innerSection {
@@ -331,7 +269,6 @@ section {
 
             &:hover {
               text-decoration: underline;
-              color: gray;
               text-decoration-thickness: 1px;
             }
           }
@@ -474,215 +411,3 @@ section {
 }
 
 /* FOOTER END================================================ */
-
-/* MODAL START ====================================== */
-.productModal {
-  text-align: center;
-  background-color: #f4f4f4;
-
-  .container {
-    margin: 20px;
-  }
-
-  /* .button {
-    background: maroon;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    border-radius: 5px;
-    transition: 0.3s;
-    margin-top: 10px;
-  }
-
-  .button:hover {
-    background: darkred;
-  } */
-
-  /* Modal Styling */
-  .modal {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    animation: fadeIn 0.3s ease-in-out;
-  }
-
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-
-    to {
-      opacity: 1;
-    }
-  }
-
-  .modal-content {
-    background: white;
-    width: 50%;
-    margin: 3% auto;
-    padding: 20px;
-    border-radius: 8px;
-    text-align: center;
-    position: relative;
-    transform: translateY(-20px);
-    animation: slideUp 0.3s ease-in-out forwards;
-    h2{
-      text-transform: uppercase;
-    }
-    p{
-      text-align: justify;
-    }
-    a{
-      margin-top: 20px;
-      text-decoration: none;
-      text-transform: capitalize;
-      background-color: #084399;
-      padding: 10px 15px;
-      color: #fff;
-      font-weight: 500;
-      &:hover{
-        color: #bbb4b4;
-      }
-    }
-  }
-
-  @keyframes slideUp {
-    from {
-      transform: translateY(-20px);
-      opacity: 0;
-    }
-
-    to {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
-
-  .close {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    font-size: 24px;
-    cursor: pointer;
-  }
-
-  .spec-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 10px;
-  }
-
-  .spec-table th,
-  .spec-table td {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: left;
-  }
-
-  .spec-table th {
-    background-color: maroon;
-    color: white;
-  }
-}
-
-/* MODAL END ====================================== */
-
-/* GOOGLE FONTS  */
-
-.merriweather-bold {
-  font-family: "Merriweather", serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.merriweather-bold-italic {
-  font-family: "Merriweather", serif;
-  font-weight: 700;
-  font-style: italic;
-}
-
-.merriweather-regular {
-  font-family: "Merriweather", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.noto-serif-todhri-regular {
-  font-family: "Noto Serif Todhri", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-
-/* RESPONSIVE  */
-/* @media (min-width: 2400px) {
-  .container {
-    max-width: 1620px;
-  }
-} */
-
-@media (max-width: 425px) {
-  section {
-
-    .body_content {
-      margin-top: 2rem;
-      margin-bottom: 2rem;
-
-      h2 {
-        font-size: large;
-      }
-
-      .product_content {
-        flex-direction: column;
-        gap: 1rem;
-        margin-top: 2rem;
-
-        p {
-          font-size: 1rem;
-          margin: 1rem 0;
-        }
-
-        img {
-          width: 90vw;
-        }
-      }
-
-      .product_conetnt_flex {
-        flex-direction: column-reverse;
-      }
-    }
-  }
-}
-
-@media (min-width: 426px) and (max-width: 1024px) {
-  section {
-
-    .body_content {
-      margin-top: 2rem;
-      margin-bottom: 2rem;
-
-      h2 {
-        font-size: large;
-      }
-
-      .product_content {
-        p {
-          font-size: medium;
-          margin: 1rem 0;
-        }
-
-        img {
-          width: 37vw;
-        }
-      }
-
-    }
-  }
-}

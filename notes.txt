@@ -17,3 +17,7 @@ color: #bbb4b4;
 
 h2_color: #b98f26
 banner_img: 50vw
+
+class="spec-table"
+
+<i class="fa-solid fa-circle-arrow-right"></i>
