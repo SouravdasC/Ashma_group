@@ -26,161 +26,251 @@
 
 <body>
   <!-- HEADER ===================================================================== -->
-  <header>
-    <!-- NAVBAR ================================================================ -->
-    <navbar>
-      <a href="./home.html">
-        <img src="./images/logo6.png" alt="logo">
-      </a>
-      <ul class="navbarMenu">
-        <li class="menu-items">
-          <a href="./home.html" class="menu-link">home</a>
-        </li>
-        <li class="menu-items">
-          <a href="./ourCompany.html" class="menu-link">about us</a>
-          <ul class="submenu-items">
-            <li>
-              <a href="./ourCompany.html" class="">our company</a>
-            </li>
-            <li>
-              <a href="./ourManagement.html">our management</a>
-            </li>
-          </ul>
-        </li>
-        <li class="menu-items">
-          <a href="" class="menu-link">our work</a>
-          <ul class="submenu-items">
-            <li>
-              <a href="./product.html">product & project</a>
-            </li>
-            <li>
-              <a href="./futurePlan.html">future plan</a>
-            </li>
-          </ul>
-        </li>
-        <li class="menu-items">
-          <a href="" class="menu-link">gallery</a>
-          <ul class="submenu-items">
-            <li>
-              <a href="./galleryProject.html">our project</a>
-            </li>
-            <li>
-              <a href="./activities.html">our activities</a>
-            </li>
-          </ul>
-        </li>
-        <li class="menu-items">
-          <a href="./career.html" class="menu-link">career</a>
-        </li>
-        <li class="menu-items">
-          <a href="./contact.html" class="menu-link">contact us</a>
-        </li>
-      </ul>
-  
-    </navbar>
-    <!-- COMPANY SOCIAL MENU  -->
-    <div class="compnay_details">
-      <div class="company_header_socialMenu">
-        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-        <a href=""><i class="fa-brands fa-whatsapp"></i></a>
-        <a href=""><i class="fa-brands fa-instagram"></i></a>
-        <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-      </div>
-      <div class="company_contact_details">
-        <div>
-          <a href="mailto:enquiry@ashmamotors.com">
-            <i class="fa-regular fa-envelope"></i>
-            enquiry@ashmamotors.com
-          </a>
-        </div>
-        <div>
-          <a href="tel:+918697185501">
-            <i class="fa-solid fa-phone"></i>
-            +91 8697185501 (Director)
-          </a>
-        </div>
-      </div>
-    </div>
-    <!-- RESPONSIVE ================ -->
-    <div class="toggleMenu">
-      <div class="">
-        <a href="">
-          <img src="https://ashmamotors.com/images/footer-logo.png" alt="logo">
-        </a>
-        <button class="menu-btn" onclick="toggleSidebar()">&#9776;</i></button>
-        <ul class="sidebar" id="sidebar">
-          <li class="menu-items">
-            <a href="" class="menu-link">home</a>
-          </li>
-          <li class="menu-items">
-            <a href="/about" class="menu-link" onclick="toggleSubmenu(event, 'submenu1')">
-              about us<i class="fa-solid fa-caret-down"></i>
+  <div class="mainHeader">
+    <header class="header">
+      <div class="navbarSection">
+        <!-- NAVBAR ================================================================ -->
+        <navbar>
+          <div class="menuDetails">
+            <a href="./home.html">
+              <img src="./images/logo6.png" alt="logo">
             </a>
-            <ul class="submenu" id="submenu1">
-              <li>
-                <a href="./ourCompany.html" class="noto-serif-todhri-regular">our company</a>
-              </li>
-              <li>
-                <a href="./ourManagement.html" class="noto-serif-todhri-regular">our management</a>
-              </li>
-            </ul>
-          </li>
-          <li class="menu-items">
-            <a href="./product.html" class="menu-link" onclick="toggleSubmenu(event, 'submenu2')">our work<i
-                class="fa-solid fa-caret-down"></i></a>
-            <ul class="submenu" id="submenu2">
-              <li>
-                <a href="./product.html" class="noto-serif-todhri-regular">product & project</a>
-              </li>
-              <li>
-                <a href="./futurePlan.html" class="noto-serif-todhri-regular">future plan</a>
-              </li>
-            </ul>
-          </li>
-          <li class="menu-items">
-            <a href="" class="menu-link" onclick="toggleSubmenu(event, 'submenu3')">gallery<i
-                class="fa-solid fa-caret-down"></i></a>
-            <ul class="submenu" id="submenu3">
-              <li>
-                <a href="">our project</a>
-              </li>
-              <li>
-                <a href="">our activities</a>
-              </li>
-            </ul>
-          </li>
-          <li class="menu-items">
-            <a href="" class="menu-link">career</a>
-          </li>
-          <li class="menu-items">
-            <a href="" class="menu-link">contact us</a>
-          </li>
+  
+          </div>
+  
           <!-- COMPANY SOCIAL MENU  -->
-          <li class="responsive_socialMenu">
-            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
-            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-          </li>
-          <div class="responsive_company_details">
-            <div>
-              <a href="mailto:enquiry@ashmamotors.com">
-                <i class="fa-regular fa-envelope"></i>
-                enquiry@ashmamotors.com
-              </a>
+          <div class="compnay_details">
+            <ul class="navbarMenu">
+              <li class="menu-items">
+                <a href="./home.html" class="menu-link">home</a>
+              </li>
+              <li class="menu-items" data-menu="aboutUs">
+                <a href="./ourCompany.html" class="menu-link">about us</a>
+              </li>
+              <li class="menu-items" data-menu="ourWork">
+                <a href="" class="menu-link">our work</a>
+              </li>
+              <li class="menu-items" data-menu="gallery">
+                <a href="" class="menu-link">business</a>
+              </li>
+              <li class="menu-items">
+                <a href="./career.html" class="menu-link">career</a>
+              </li>
+              <li class="menu-items">
+                <a href="./contact.html" class="menu-link">contact us</a>
+              </li>
+            </ul>
+  
+            <div class="company_header_socialMenu">
+              <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+              <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
             </div>
-            <div>
-              <a href="tel:+918697185501">
-                <i class="fa-solid fa-phone"></i>
-                +91 8697185501 (Director)
-              </a>
+  
+            <div class="company_contact_details">
+              <div>
+                <a href="mailto:enquiry@ashmamotors.com">
+                  <i class="fa-regular fa-envelope"></i>
+                  enquiry@ashmamotors.com
+                </a>
+              </div>
+              <div>
+                <a href="tel:+918697185501">
+                  <i class="fa-solid fa-phone"></i>
+                  +91 8697185501 (Director)
+                </a>
+              </div>
             </div>
           </div>
-        </ul>
+        </navbar>
+  
+        <!-- Full-Screen Submenu -->
+        <div class="submenu-container" data-aos="fade-down-right">
+          <!-- about us  -->
+          <div class="submenu-content container" id="aboutUs" style="display: block; opacity: 1;">
+            <h2>ashma group of companies</h2>
+            <div class="blankUnderline"></div>
+            <h4>about the ashma group</h4>
+            <ul class="submenu-links">
+              <li>
+                <a href="./ourCompany.html" class="">our company</a>
+              </li>
+              <li>
+                <a href="./ourManagement.html">our management</a>
+              </li>
+            </ul>
+            <div class="blankUnderline"></div>
+  
+            <!-- <h2>our clients</h2> -->
+            <div class="clinets_section container" data-aos="zoom-in">
+              <h2>Our Clients</h2>
+              <div class="slider-container">
+                <button class="prev" onclick="prevSlide()">&#10094;</button>
+                <div class="slider">
+                  <div class="slide">
+                    <img loading="lazy" src="./images/ceat.png" alt="CEAT">
+                    <img loading="lazy" src="./images/livguard.png" alt="livguard">
+                    <img loading="lazy" src="./images/leader.jpg" alt="leader">
+                    <!-- <img src="./images/eastman.png" alt="eastman">
+                                          <img src="./images/ambuja.png" alt="ambuja">
+                                          <img src="./images/captain.jpeg" alt="captain"> -->
+                  </div>
+                  <div class="slide">
+                    <!-- <img src="./images/ceat.png" alt="CEAT">
+                                          <img src="./images/livguard.png" alt="livguard">
+                                          <img src="./images/leader.jpg" alt="leader"> -->
+                    <img loading="lazy" src="./images/eastman.png" alt="eastman">
+                    <img loading="lazy" src="./images/ambuja.png" alt="ambuja">
+                    <img loading="lazy" src="./images/captain.jpeg" alt="captain">
+                  </div>
+                </div>
+                <button class="next" onclick="nextSlide()">&#10095;</button>
+              </div>
+            </div>
+          </div>
+  
+          <!-- our work  -->
+          <div class="submenu-content container" id="ourWork">
+            <h2>overview</h2>
+            <div class="blankUnderline"></div>
+            <h4>ashma group work</h4>
+            <ul class="submenu-links">
+              <li>
+                <a href="./galleryProject.html">our project</a>
+              </li>
+              <li>
+                <a href="./activities.html">our activities</a>
+              </li>
+            </ul>
+  
+          </div>
+  
+          <!-- gallery  -->
+          <div class="submenu-content container" id="gallery">
+            <h2>ashma group business overview</h2>
+            <div class="blankUnderline"></div>
+            <h4>ashma group business list</h4>
+            <div class="blankUnderline"></div>
+            <ul class="submenu-links">
+              <li>
+                <a href="./product.html">ashma e-rickshaw</a>
+              </li>
+              <li>
+                <a href="./futurePlan.html">ashma jute</a>
+              </li>
+              <li>
+                <a href="./futurePlan.html">ashma construction</a>
+              </li>
+            </ul>
+  
+            <h4>Business Verticals</h4>
+            <div class="blankUnderline"></div>
+            <ul class="submenu-links">
+              <li>
+                <a href="./product.html">product & project</a>
+              </li>
+              <li>
+                <a href="./futurePlan.html">future plan</a>
+              </li>
+            </ul>
+          </div>
+  
+        </div>
+      </div>
+  
+      <!-- RESPONSIVE ================ -->
+      <div class="toggleMenu">
+        <div class="toggleMenu_icons">
+          <a href="./home.html">
+            <img src="./images/logo6.png" alt="logo">
+          </a>
+          <button class="menu-btn" onclick="toggleSidebar()">&#9776;</i></button>
+          <button class="menu-btn1" onclick="toggleSidebar()"><i class="fa-solid fa-xmark"></i></button>
+          <ul class="sidebar" id="sidebar">
+            <li class="menu-items">
+              <a href="" class="menu-link">home</a>
+            </li>
+            <li class="menu-items">
+              <a href="/about" class="menu-link" onclick="toggleSubmenu(event, 'submenu1')">
+                about us<i class="fa-solid fa-caret-down"></i>
+              </a>
+              <ul class="submenu" id="submenu1">
+                <li>
+                  <a href="./ourCompany.html" class="noto-serif-todhri-regular">our company</a>
+                </li>
+                <li>
+                  <a href="./ourManagement.html" class="noto-serif-todhri-regular">our management</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-items">
+              <a href="./product.html" class="menu-link" onclick="toggleSubmenu(event, 'submenu2')">our work<i
+                  class="fa-solid fa-caret-down"></i></a>
+              <ul class="submenu" id="submenu2">
+                <li>
+                  <a href="./product.html" class="noto-serif-todhri-regular">product & project</a>
+                </li>
+                <li>
+                  <a href="./futurePlan.html" class="noto-serif-todhri-regular">future plan</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-items">
+              <a href="" class="menu-link" onclick="toggleSubmenu(event, 'submenu3')">gallery<i
+                  class="fa-solid fa-caret-down"></i></a>
+              <ul class="submenu" id="submenu3">
+                <li>
+                  <a href="./galleryProject.html">our project</a>
+                </li>
+                <li>
+                  <a href="./activities.html">our activities</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-items">
+              <a href="./career.html" class="menu-link">career</a>
+            </li>
+            <li class="menu-items">
+              <a href="./contact.html" class="menu-link">contact us</a>
+            </li>
+            <!-- COMPANY SOCIAL MENU  -->
+            <li class="responsive_socialMenu">
+              <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+              <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+            </li>
+            <div class="responsive_company_details">
+              <div>
+                <a href="mailto:enquiry@ashmamotors.com">
+                  <i class="fa-regular fa-envelope"></i>
+                  enquiry@ashmamotors.com
+                </a>
+              </div>
+              <div>
+                <a href="tel:+918697185501">
+                  <i class="fa-solid fa-phone"></i>
+                  +91 8697185501 (Director)
+                </a>
+              </div>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- BANEER  -->
+    <div class="company_details_banner">
+      <div class="content">
+        <div class="tag">Ashma Stories</div>
+        <div class="title">Let The Games Begin</div>
+        <div class="desc">Ashma group's legacy in the promotion of sports endures to this day. A photo feature.</div>
       </div>
     </div>
-  </header>
-  <div class="border-text"></div>
+  
+  </div>
+
+  <!-- <div class="border-text"></div> -->
 
 <!-- section ============================== -->
 <section>
@@ -410,7 +500,75 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!-- gsap  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
 <script>
   AOS.init();
+
+    // CONTACT US
+    let headoffice = document.getElementById("headOffice");
+    let manufacturingoffice = document.getElementById("manufacturingOffice");
+
+    // function transfer(){
+    // if(manufacturingoffice.style.display === "none" || manufacturingoffice.style.display === ""){
+    //   manufacturingoffice.style.display = "block"; // Show the div
+    // }else{
+    //   manufacturingoffice.style.display = "none"; // Hide the div
+    // }
+    // }
+
+    function button1() {
+      headoffice.style.display = "block"; // Show Div 1
+      manufacturingoffice.style.display = "none"; // Hide Div 2
+    }
+    function button2() {
+      headoffice.style.display = "none"; // Show Div 1
+      manufacturingoffice.style.display = "block"; // Hide Div 2
+    }
+
+    window.addEventListener("scroll", function () {
+      var navbar = document.querySelector(".header");
+      if (window.scrollY > 50) {
+        navbar.classList.add("scrolled");
+      } else {
+        navbar.classList.remove("scrolled");
+      }
+    });
+
+    // header 
+    document.addEventListener("DOMContentLoaded", () => {
+      const navItems = document.querySelectorAll(".menu-items");
+      const submenuContainer = document.querySelector(".submenu-container");
+      const submenuContents = document.querySelectorAll(".submenu-content");
+
+      navItems.forEach(item => {
+        item.addEventListener("mouseenter", () => {
+          const menuName = item.getAttribute("data-menu");
+
+          // Show submenu container with animation
+          submenuContainer.style.display = "block";
+          gsap.to(submenuContainer, { opacity: 1, duration: 0.3 });
+
+          // Hide all submenus and show selected one
+          submenuContents.forEach(content => content.style.display = "none");
+          const selectedMenu = document.getElementById(menuName);
+          if (selectedMenu) {
+            selectedMenu.style.display = "block";
+            gsap.fromTo(selectedMenu, { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.3 });
+          }
+        });
+      });
+
+      // Hide submenu when mouse leaves the area
+      submenuContainer.addEventListener("mouseleave", () => {
+        gsap.to(submenuContainer, {
+          opacity: 0, duration: 0.3, onComplete: () => {
+            submenuContainer.style.display = "none";
+            submenuContents.forEach(content => content.style.display = "none");
+          }
+        });
+      });
+    })
 </script>
 </html>

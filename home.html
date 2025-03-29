@@ -26,189 +26,279 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
-<body style="border: 2px solid red;">
+<body>
   <!-- HEADER ===================================================================== -->
-  <header>
-    <!-- NAVBAR ================================================================ -->
-    <navbar>
-      <a href="./home.html">
-        <img src="./images/logo6.png" alt="logo">
-      </a>
-      <ul class="navbarMenu">
-        <li class="menu-items">
-          <a href="./home.html" class="menu-link">home</a>
-        </li>
-        <li class="menu-items">
-          <a href="./ourCompany.html" class="menu-link">about us</a>
-          <ul class="submenu-items">
-            <li>
-              <a href="./ourCompany.html" class="">our company</a>
-            </li>
-            <li>
-              <a href="./ourManagement.html">our management</a>
-            </li>
-          </ul>
-        </li>
-        <li class="menu-items">
-          <a href="" class="menu-link">our work</a>
-          <ul class="submenu-items">
-            <li>
-              <a href="./product.html">product & project</a>
-            </li>
-            <li>
-              <a href="./futurePlan.html">future plan</a>
-            </li>
-          </ul>
-        </li>
-        <li class="menu-items">
-          <a href="" class="menu-link">gallery</a>
-          <ul class="submenu-items">
-            <li>
-              <a href="./galleryProject.html">our project</a>
-            </li>
-            <li>
-              <a href="./activities.html">our activities</a>
-            </li>
-          </ul>
-        </li>
-        <li class="menu-items">
-          <a href="./career.html" class="menu-link">career</a>
-        </li>
-        <li class="menu-items">
-          <a href="./contact.html" class="menu-link">contact us</a>
-        </li>
-      </ul>
-
-    </navbar>
-    <!-- COMPANY SOCIAL MENU  -->
-    <div class="compnay_details">
-      <div class="company_header_socialMenu">
-        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-        <a href=""><i class="fa-brands fa-whatsapp"></i></a>
-        <a href=""><i class="fa-brands fa-instagram"></i></a>
-        <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-      </div>
-      <div class="company_contact_details">
-        <div>
-          <a href="mailto:enquiry@ashmamotors.com">
-            <i class="fa-regular fa-envelope"></i>
-            enquiry@ashmamotors.com
-          </a>
-        </div>
-        <div>
-          <a href="tel:+918697185501">
-            <i class="fa-solid fa-phone"></i>
-            +91 8697185501 (Director)
-          </a>
-        </div>
-      </div>
-    </div>
-    <!-- RESPONSIVE ================ -->
-    <div class="toggleMenu">
-      <div class="toggleMenu_icons">
-        <a href="">
-          <img src="./images/logo6.png" alt="logo">
-        </a>
-        <button class="menu-btn" onclick="toggleSidebar()">&#9776;</i></button>
-        <button class="menu-btn1" onclick="toggleSidebar()"><i class="fa-solid fa-xmark"></i></button>
-        <ul class="sidebar" id="sidebar">
-          <li class="menu-items">
-            <a href="" class="menu-link">home</a>
-          </li>
-          <li class="menu-items">
-            <a href="/about" class="menu-link" onclick="toggleSubmenu(event, 'submenu1')">
-              about us<i class="fa-solid fa-caret-down"></i>
+  <div class="mainHeader">
+    <header class="header">
+      <div class="navbarSection">
+        <!-- NAVBAR ================================================================ -->
+        <navbar>
+          <div class="menuDetails">
+            <a href="./home.html">
+              <img src="./images/logo6.png" alt="logo">
             </a>
-            <ul class="submenu" id="submenu1">
-              <li>
-                <a href="./ourCompany.html" class="noto-serif-todhri-regular">our company</a>
-              </li>
-              <li>
-                <a href="./ourManagement.html" class="noto-serif-todhri-regular">our management</a>
-              </li>
-            </ul>
-          </li>
-          <li class="menu-items">
-            <a href="./product.html" class="menu-link" onclick="toggleSubmenu(event, 'submenu2')">our work<i
-                class="fa-solid fa-caret-down"></i></a>
-            <ul class="submenu" id="submenu2">
-              <li>
-                <a href="./product.html" class="noto-serif-todhri-regular">product & project</a>
-              </li>
-              <li>
-                <a href="./futurePlan.html" class="noto-serif-todhri-regular">future plan</a>
-              </li>
-            </ul>
-          </li>
-          <li class="menu-items">
-            <a href="" class="menu-link" onclick="toggleSubmenu(event, 'submenu3')">gallery<i
-                class="fa-solid fa-caret-down"></i></a>
-            <ul class="submenu" id="submenu3">
-              <li>
-                <a href="">our project</a>
-              </li>
-              <li>
-                <a href="">our activities</a>
-              </li>
-            </ul>
-          </li>
-          <li class="menu-items">
-            <a href="" class="menu-link">career</a>
-          </li>
-          <li class="menu-items">
-            <a href="" class="menu-link">contact us</a>
-          </li>
+
+          </div>
+
           <!-- COMPANY SOCIAL MENU  -->
-          <li class="responsive_socialMenu">
-            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
-            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-          </li>
-          <div class="responsive_company_details">
-            <div>
-              <a href="mailto:enquiry@ashmamotors.com">
-                <i class="fa-regular fa-envelope"></i>
-                enquiry@ashmamotors.com
-              </a>
+          <div class="compnay_details">
+            <ul class="navbarMenu">
+              <li class="menu-items">
+                <a href="./home.html" class="menu-link">home</a>
+              </li>
+              <li class="menu-items" data-menu="aboutUs">
+                <a href="./ourCompany.html" class="menu-link">about us</a>
+              </li>
+              <li class="menu-items" data-menu="ourWork">
+                <a href="" class="menu-link">our work</a>
+              </li>
+              <li class="menu-items" data-menu="gallery">
+                <a href="" class="menu-link">business</a>
+              </li>
+              <li class="menu-items">
+                <a href="./career.html" class="menu-link">career</a>
+              </li>
+              <li class="menu-items">
+                <a href="./contact.html" class="menu-link">contact us</a>
+              </li>
+            </ul>
+
+            <div class="company_header_socialMenu">
+              <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+              <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
             </div>
-            <div>
-              <a href="tel:+918697185501">
-                <i class="fa-solid fa-phone"></i>
-                +91 8697185501 (Director)
-              </a>
+
+            <div class="company_contact_details">
+              <div>
+                <a href="mailto:enquiry@ashmamotors.com">
+                  <i class="fa-regular fa-envelope"></i>
+                  enquiry@ashmamotors.com
+                </a>
+              </div>
+              <div>
+                <a href="tel:+918697185501">
+                  <i class="fa-solid fa-phone"></i>
+                  +91 8697185501 (Director)
+                </a>
+              </div>
             </div>
           </div>
-        </ul>
+        </navbar>
+
+        <!-- Full-Screen Submenu -->
+        <div class="submenu-container" data-aos="fade-down-right">
+          <!-- about us  -->
+          <div class="submenu-content container" id="aboutUs" style="display: block; opacity: 1;">
+            <h2>ashma group of companies</h2>
+            <div class="blankUnderline"></div>
+            <h4>about the ashma group</h4>
+            <ul class="submenu-links">
+              <li>
+                <a href="./ourCompany.html" class="">our company</a>
+              </li>
+              <li>
+                <a href="./ourManagement.html">our management</a>
+              </li>
+            </ul>
+            <div class="blankUnderline"></div>
+
+            <!-- <h2>our clients</h2> -->
+            <div class="clinets_section container" data-aos="zoom-in">
+              <h2>Our Clients</h2>
+              <div class="slider-container">
+                <button class="prev" onclick="prevSlide()">&#10094;</button>
+                <div class="slider">
+                  <div class="slide">
+                    <img loading="lazy" src="./images/ceat.png" alt="CEAT">
+                    <img loading="lazy" src="./images/livguard.png" alt="livguard">
+                    <img loading="lazy" src="./images/leader.jpg" alt="leader">
+                    <!-- <img src="./images/eastman.png" alt="eastman">
+                                  <img src="./images/ambuja.png" alt="ambuja">
+                                  <img src="./images/captain.jpeg" alt="captain"> -->
+                  </div>
+                  <div class="slide">
+                    <!-- <img src="./images/ceat.png" alt="CEAT">
+                                  <img src="./images/livguard.png" alt="livguard">
+                                  <img src="./images/leader.jpg" alt="leader"> -->
+                    <img loading="lazy" src="./images/eastman.png" alt="eastman">
+                    <img loading="lazy" src="./images/ambuja.png" alt="ambuja">
+                    <img loading="lazy" src="./images/captain.jpeg" alt="captain">
+                  </div>
+                </div>
+                <button class="next" onclick="nextSlide()">&#10095;</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- our work  -->
+          <div class="submenu-content container" id="ourWork">
+            <h2>overview</h2>
+            <div class="blankUnderline"></div>
+            <h4>ashma group work</h4>
+            <ul class="submenu-links">
+              <li>
+                <a href="./galleryProject.html">our project</a>
+              </li>
+              <li>
+                <a href="./activities.html">our activities</a>
+              </li>
+            </ul>
+
+          </div>
+
+          <!-- gallery  -->
+          <div class="submenu-content container" id="gallery">
+            <h2>ashma group business overview</h2>
+            <div class="blankUnderline"></div>
+            <h4>ashma group business list</h4>
+            <div class="blankUnderline"></div>
+            <ul class="submenu-links">
+              <li>
+                <a href="./product.html">ashma e-rickshaw</a>
+              </li>
+              <li>
+                <a href="./futurePlan.html">ashma jute</a>
+              </li>
+              <li>
+                <a href="./futurePlan.html">ashma construction</a>
+              </li>
+            </ul>
+
+            <h4>Business Verticals</h4>
+            <div class="blankUnderline"></div>
+            <ul class="submenu-links">
+              <li>
+                <a href="./product.html">product & project</a>
+              </li>
+              <li>
+                <a href="./futurePlan.html">future plan</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
       </div>
+
+      <!-- RESPONSIVE ================ -->
+      <div class="toggleMenu">
+        <div class="toggleMenu_icons">
+          <a href="./home.html">
+            <img src="./images/logo6.png" alt="logo">
+          </a>
+          <button class="menu-btn" onclick="toggleSidebar()">&#9776;</i></button>
+          <button class="menu-btn1" onclick="toggleSidebar()"><i class="fa-solid fa-xmark"></i></button>
+          <ul class="sidebar" id="sidebar">
+            <li class="menu-items">
+              <a href="" class="menu-link">home</a>
+            </li>
+            <li class="menu-items">
+              <a href="/about" class="menu-link" onclick="toggleSubmenu(event, 'submenu1')">
+                about us<i class="fa-solid fa-caret-down"></i>
+              </a>
+              <ul class="submenu" id="submenu1">
+                <li>
+                  <a href="./ourCompany.html" class="noto-serif-todhri-regular">our company</a>
+                </li>
+                <li>
+                  <a href="./ourManagement.html" class="noto-serif-todhri-regular">our management</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-items">
+              <a href="./product.html" class="menu-link" onclick="toggleSubmenu(event, 'submenu2')">our work<i
+                  class="fa-solid fa-caret-down"></i></a>
+              <ul class="submenu" id="submenu2">
+                <li>
+                  <a href="./product.html" class="noto-serif-todhri-regular">product & project</a>
+                </li>
+                <li>
+                  <a href="./futurePlan.html" class="noto-serif-todhri-regular">future plan</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-items">
+              <a href="" class="menu-link" onclick="toggleSubmenu(event, 'submenu3')">gallery<i
+                  class="fa-solid fa-caret-down"></i></a>
+              <ul class="submenu" id="submenu3">
+                <li>
+                  <a href="./galleryProject.html">our project</a>
+                </li>
+                <li>
+                  <a href="./activities.html">our activities</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-items">
+              <a href="./career.html" class="menu-link">career</a>
+            </li>
+            <li class="menu-items">
+              <a href="./contact.html" class="menu-link">contact us</a>
+            </li>
+            <!-- COMPANY SOCIAL MENU  -->
+            <li class="responsive_socialMenu">
+              <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+              <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+            </li>
+            <div class="responsive_company_details">
+              <div>
+                <a href="mailto:enquiry@ashmamotors.com">
+                  <i class="fa-regular fa-envelope"></i>
+                  enquiry@ashmamotors.com
+                </a>
+              </div>
+              <div>
+                <a href="tel:+918697185501">
+                  <i class="fa-solid fa-phone"></i>
+                  +91 8697185501 (Director)
+                </a>
+              </div>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- SLIDER  -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" style="background-image: url('./images/slider_1.jpg');">
+          <div class="content">
+            <div class="tag">Tata Stories</div>
+            <div class="title">Let The Games Begin</div>
+            <div class="desc">Tata group's legacy in the promotion of sports endures to this day. A photo feature.</div>
+            <a href="#" class="btn">View photos</a>
+          </div>
+        </div>
+        <div class="swiper-slide" style="background-image: url('./images/slider_2\ \(2\).jpg');">
+          <div class="content">
+            <div class="tag">Tata Stories</div>
+            <div class="title">Let The Games Begin</div>
+            <div class="desc">Tata group's legacy in the promotion of sports endures to this day. A photo feature.</div>
+            <a href="#" class="btn">View photos</a>
+          </div>
+        </div>
+        <div class="swiper-slide"
+          style="background-image: url('https://ashmamotors.com/ashmagroup/images/slider_1.png');">
+          <div class="content">
+            <div class="tag">Tata Stories</div>
+            <div class="title">Let The Games Begin</div>
+            <div class="desc">Tata group's legacy in the promotion of sports endures to this day. A photo feature.</div>
+            <a href="#" class="btn">View photos</a>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
     </div>
-  </header>
+  </div>
   <div class="border-text"></div>
 
 
   <!-- MAIN ============================================================================ -->
   <section>
-    <!-- SLIDER  -->
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img src="./images/slider_1.jpg" />
-        </div>
-        <div class="swiper-slide">
-          <img src="./images/slider_2.jpg" />
-        </div>
-        <div class="swiper-slide">
-          <img src="https://ashmamotors.com/demo/images/slider_2.jpeg" />
-        </div>
-        <div class="swiper-slide">
-          <img src="./images/slider_3.jpg" />
-        </div>
-        <div class="swiper-slide">
-          <img src="./images/slider_4.jpg" />
-        </div>
-      </div>
-      <div class="swiper-pagination"></div>
-    </div>
 
     <!-- MAIN BODY  -->
     <div class="main_body">
@@ -232,216 +322,85 @@
             roads &
             infrastructure, we play a vital role in bolstering economic growth and facilitating a conducive environment
             for
-            businesses to thrive.</p>
+            businesses to thrive.
+          </p>
           <button>
             <a href="./ourCompany.html" target="_blank">learn more</a>
           </button>
         </div>
         <!-- RIGHT SECTION  -->
         <div class="right_section" data-aos="zoom-in">
-          <img src="./images/about_img.png" alt="company_img">
+          <img loading="lazy" src="./images/about_img.png" alt="company_img">
         </div>
       </div>
 
       <!-- company's names  -->
-      <div class="container comapanyNames" data-aos="zoom-in">
-        <!-- ashma  -->
-        <div class="ashmaCompany" data-aos="zoom-in">
-          <div>
-            <img src="./images/auto-rickshaw.png" alt="ashma-icons">
+      <div class="companyList">
+        <div class="container comapanyNames" data-aos="zoom-in">
+          <!-- ashma  -->
+          <div class="ashmaCompany" data-aos="zoom-in">
+            <div>
+              <img loading="lazy" src="./images/auto-rickshaw.png" alt="ashma-icons">
+            </div>
+            <div>
+              <h3>ashma e-rickshaw</h3>
+              <p>We since 1982 take great satisfaction in offering infrastructural amenities to our customers who are
+                Lorem
+                ipsum dolor sit amet consectetur adipisicing elit. Ex voluptates fugit impedit in aliquid, nostrum
+                incidunt
+                laborum debitis porro qui?…</p>
+              <a href="./ashmaErickshaw.html" target="_blank">read more...</a>
+            </div>
           </div>
-          <div>
-            <h3>ashma e-rickshaw</h3>
-            <p>We since 1982 take great satisfaction in offering infrastructural amenities to our customers who are
-              Lorem
-              ipsum dolor sit amet consectetur adipisicing elit. Ex voluptates fugit impedit in aliquid, nostrum
-              incidunt
-              laborum debitis porro qui?…</p>
-            <a href="./ashmaErickshaw.html" target="_blank">read more...</a>
+          <!-- jute mill  -->
+          <div class="ashmaCompany" data-aos="zoom-in">
+            <div>
+              <img loading="lazy" src="./images/juteMill2.png" alt="ashma-icons">
+            </div>
+            <div>
+              <h3>ashma jute mill </h3>
+              <p>We since 1982 take great satisfaction in offering infrastructural amenities to our customers who are
+                Lorem
+                ipsum dolor sit amet consectetur adipisicing elit. Ex voluptates fugit impedit in aliquid, nostrum
+                incidunt
+                laborum debitis porro qui?…</p>
+              <a href="./ashmaJuteMill.html" target="_blank">read more...</a>
+            </div>
           </div>
-        </div>
-        <!-- jute mill  -->
-        <div class="ashmaCompany" data-aos="zoom-in">
-          <div>
-            <img src="./images/juteMill.png" alt="ashma-icons">
-          </div>
-          <div>
-            <h3>ashma jute mill </h3>
-            <p>We since 1982 take great satisfaction in offering infrastructural amenities to our customers who are
-              Lorem
-              ipsum dolor sit amet consectetur adipisicing elit. Ex voluptates fugit impedit in aliquid, nostrum
-              incidunt
-              laborum debitis porro qui?…</p>
-            <a href="./ashmaJuteMill.html" target="_blank">read more...</a>
-          </div>
-        </div>
-        <!-- construction  -->
-        <div class="ashmaCompany" data-aos="zoom-in">
-          <div>
-            <img src="./images/building.png" alt="ashma-icons">
-          </div>
-          <div>
-            <h3>ashma construction</h3>
-            <p>We since 1982 take great satisfaction in offering infrastructural amenities to our customers who are
-              Lorem
-              ipsum dolor sit amet consectetur adipisicing elit. Ex voluptates fugit impedit in aliquid, nostrum
-              incidunt
-              laborum debitis porro qui?…</p>
-            <a href="./ashmaConstraction.html" target="_blank">read more...</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- CHAIRMAN's MESSAGE  -->
-      <div class="chairmanMsg" data-aos="zoom-in">
-        <div class="container">
-          <img src="./images/chairman-photo_v01.jpg" alt="chairman">
-          <div class="abt_details">
-            <h2>CHAIRMAN’S MESSAGE</h2>
-            <p>
-              Ashma Group of Companies is a professionally managed and fast-growing organization which aims at
-              strengthening and
-              establishing itself the foremost manufacturer of steel products in India. It also aims at achieving
-              greater heights and
-              long-term growth. The group has come a long way from its inception in1984, when it made a moderate
-              beginning by setting
-              up a small industrial venture, to presently running two primary integrated steel Plants with Captive
-              Power Plant in the
-              state of Uttar Pradesh and Gujarat. Gallantt Ispat Limited (GIL) is a well established public limited
-              company listed on
-              both the premier stock exchanges of India viz. BSE Limited and National Stock Exchange of India Limited.
-            </p>
-            <a href="./mdMessage.html">read more....</a>
+          <!-- construction  -->
+          <div class="ashmaCompany" data-aos="zoom-in">
+            <div>
+              <img loading="lazy" src="./images/building.png" alt="ashma-icons">
+            </div>
+            <div>
+              <h3>ashma construction</h3>
+              <p>We since 1982 take great satisfaction in offering infrastructural amenities to our customers who are
+                Lorem
+                ipsum dolor sit amet consectetur adipisicing elit. Ex voluptates fugit impedit in aliquid, nostrum
+                incidunt
+                laborum debitis porro qui?…</p>
+              <a href="./ashmaConstraction.html" target="_blank">read more...</a>
+            </div>
           </div>
         </div>
       </div>
 
       <!-- OUR GROUP OF COMPANIES  -->
-      <div class="container" data-aos="zoom-in">
-        <h2 class="comapny_heading">OUR GROUP OF COMPANIES</h2>
-        <div class=" company_group">
-          <!-- comany_1 -->
-          <div class="flip-card" data-aos="zoom-in">
-            <div class="flip-card-inner">
-              <div class="flip-card-front flip-card-front1">
-                <h4 class="merriweather-bold">ashma e-rickshaw</h4>
-              </div>
-              <div class="flip-card-back flip-card-back1">
-                <p class="merriweather-regular ">Revolutionizing urban transportation with eco-friendly and affordable
-                  rides. Built with advanced technology, powerful
-                  performance, and long battery life, it ensures a smooth and comfortable journey. With zero carbon
-                  emissions, low
-                  maintenance costs, and high efficiency, Ashma E-Rickshaw is the perfect choice for a greener future.
-                  Ride smart, ride
-                  clean — choose Ashma E-Rickshaw today! 🚖🔋🌱</p>
-              </div>
-            </div>
-          </div>
-          <!-- company_2  -->
-          <div class="flip-card" data-aos="zoom-in">
-            <div class="flip-card-inner">
-              <div class="flip-card-front flip-card-front2">
-                <h4 class="merriweather-bold">ashma jute mill</h4>
-              </div>
-              <div class="flip-card-back flip-card-back2">
-                <p class="merriweather-regular ">Leading the way in sustainable and eco-friendly jute products. We
-                  specialize in high-quality jute bags, fabrics, and
-                  diversified jute goods, promoting a greener future. With a commitment to quality and environmental
-                  responsibility, Ashma
-                  Jute Mill empowers industries with durable, biodegradable, and stylish jute solutions. Choose natural,
-                  choose
-                  sustainable — Ashma Jute Mill! 🌱🎋</p>
-              </div>
-            </div>
-          </div>
-          <!-- company_3  -->
-          <div class="flip-card" data-aos="zoom-in">
-            <div class="flip-card-inner">
-              <div class="flip-card-front flip-card-front3">
-                <h4 class="merriweather-bold">ashma construction</h4>
-              </div>
-              <div class="flip-card-back flip-card-back3">
-                <p class="merriweather-regular ">Building dreams with strength and innovation. We specialize in
-                  high-quality residential, commercial, and industrial construction, delivering excellence with modern
-                  design and superior craftsmanship. Committed to safety, durability, and on-time delivery, Ashma
-                  Construction turns your vision into reality. Build smart, build strong — choose Ashma Construction!
-                  🏗🏠🚧
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- <div class="flip-card" data-aos="zoom-in">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <h4 class="merriweather-bold">Ramesh Steel Industries - A Partnership Firm</h4>
-              </div>
-              <div class="flip-card-back">
-                <p class="merriweather-regular ">Started in 1994 at Raipur, in the mineral rich state of Chhattisgarh,
-                  Ramesh Steel Industries is today known for its
-                  efficient operations, top quality output and efficient use of resources.</p>
-              </div>
-            </div>
-          </div>
-          <div class="flip-card" data-aos="zoom-in">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <h4 class="merriweather-bold">Ramesh Steel Industries - A Partnership Firm</h4>
-              </div>
-              <div class="flip-card-back">
-                <p class="merriweather-regular ">Started in 1994 at Raipur, in the mineral rich state of Chhattisgarh,
-                  Ramesh Steel Industries is today known for its
-                  efficient operations, top quality output and efficient use of resources.</p>
-              </div>
-            </div>
-          </div>
-          <div class="flip-card" data-aos="zoom-in">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <h4 class="merriweather-bold">Ramesh Steel Industries - A Partnership Firm</h4>
-              </div>
-              <div class="flip-card-back">
-                <p class="merriweather-regular ">Started in 1994 at Raipur, in the mineral rich state of Chhattisgarh,
-                  Ramesh Steel Industries is today known for its
-                  efficient operations, top quality output and efficient use of resources.</p>
-              </div>
-            </div>
-          </div>
-          <div class="flip-card" data-aos="zoom-in">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <h4 class="merriweather-bold">Ramesh Steel Industries - A Partnership Firm</h4>
-              </div>
-              <div class="flip-card-back">
-                <p class="merriweather-regular ">Started in 1994 at Raipur, in the mineral rich state of Chhattisgarh,
-                  Ramesh Steel Industries is today known for its
-                  efficient operations, top quality output and efficient use of resources.</p>
-              </div>
-            </div>
-          </div>
-          <div class="flip-card" data-aos="zoom-in">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <h4 class="merriweather-bold">Ramesh Steel Industries - A Partnership Firm</h4>
-              </div>
-              <div class="flip-card-back">
-                <p class="merriweather-regular ">Started in 1994 at Raipur, in the mineral rich state of Chhattisgarh,
-                  Ramesh Steel Industries is today known for its
-                  efficient operations, top quality output and efficient use of resources.</p>
-              </div>
-            </div>
-          </div>
-          <div class="flip-card" data-aos="zoom-in">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <h4 class="merriweather-bold">Ramesh Steel Industries - A Partnership Firm</h4>
-              </div>
-              <div class="flip-card-back">
-                <p class="merriweather-regular ">Started in 1994 at Raipur, in the mineral rich state of Chhattisgarh,
-                  Ramesh Steel Industries is today known for its
-                  efficient operations, top quality output and efficient use of resources.</p>
-              </div>
-            </div>
-          </div> -->
+      <div class="container companyGroup">
+        <!-- ashma e-rickshaw  -->
+        <div class="companyName">
+          <img src="./images/companyImg.jpg" alt="e-rickshaw">
+          <h4 class="merriweather-bold">ashma e-rickshaw</h4>
+        </div>
+        <!-- ashma jute  -->
+        <div class="companyName">
+          <img src="./images/companyJute.jpg" alt="juteMill">
+          <h4 class="merriweather-bold">ashma jute mill</h4>
+        </div>
+        <!-- ashma contruction  -->
+        <div class="companyName">
+          <img src="./images/companyConstruction.jpg" alt="construction">
+          <h4 class="merriweather-bold">ashma construction</h4>
         </div>
       </div>
 
@@ -451,7 +410,7 @@
         <div class="ourProduct ">
           <!-- poduct_1  -->
           <div class=" product_card" data-aos="zoom-in">
-            <img src="./images/product_a1.png" alt="ASHMA A1">
+            <img loading="lazy" src="./images/product_a1.png" alt="ASHMA A1">
             <div class="product_details">
               <h2>ASHMA A1</h2>
               <p>Gear up to experience the electric auto rickshaw packed with industry-first features & advanced
@@ -461,7 +420,7 @@
             </div>
           </div>
           <!-- product_2 -->
-          <div class=" product_card" data-aos="zoom-in">
+          <!-- <div class=" product_card" data-aos="zoom-in">
             <img src="./images/product_super.png" alt="ASHMA SUPER">
             <div class="product_details">
               <h2>ASHMA SUPER</h2>
@@ -471,9 +430,9 @@
               <button class="button" onclick="openModal('specModal2')">KNOW MORE<i
                   class="fa-solid fa-circle-arrow-right"></i></button>
             </div>
-          </div>
+          </div> -->
           <!-- product_3  -->
-          <div class=" product_card" data-aos="zoom-in">
+          <!-- <div class=" product_card" data-aos="zoom-in">
             <img src="./images/product_n1.png" alt="ASHMA N1">
             <div class="product_details">
               <h2>ASHMA N1</h2>
@@ -481,9 +440,9 @@
               <button class="button" onclick="openModal('specModal3')">KNOW MORE<i
                   class="fa-solid fa-circle-arrow-right"></i></button>
             </div>
-          </div>
+          </div> -->
           <!-- product_4  -->
-          <div class=" product_card" data-aos="zoom-in">
+          <!-- <div class=" product_card" data-aos="zoom-in">
             <img src="./images/product_loader.png" alt="loader">
             <div class="product_details">
               <h2>loader</h2>
@@ -491,10 +450,10 @@
               <button class="button" onclick="openModal('specModal4')">KNOW MORE<i
                   class="fa-solid fa-circle-arrow-right"></i></button>
             </div>
-          </div>
+          </div> -->
           <!-- product_5  -->
           <div class=" product_card" data-aos="zoom-in">
-            <img src="./images/product_jute.png" alt="ashma jute">
+            <img loading="lazy" src="./images/product_jute.png" alt="ashma jute">
             <div class="product_details">
               <h2>ashma jute</h2>
               <p>Sponge iron is the key raw material required to manufacture high quality steel.</p>
@@ -504,7 +463,7 @@
           </div>
           <!-- product_6  -->
           <div class=" product_card" data-aos="zoom-in">
-            <img src="./images/product_contruction.png" alt="ashma construction">
+            <img loading="lazy" src="./images/product_contruction.png" alt="ashma construction">
             <div class="product_details">
               <h2>ashma construction</h2>
               <p>Sponge iron is the key raw material required to manufacture high quality steel.</p>
@@ -525,19 +484,83 @@
           <button class="prev" onclick="prevSlide()">&#10094;</button>
           <div class="slider">
             <div class="slide">
-              <img src="./images/ceat.png" alt="CEAT">
-              <img src="./images/livguard.png" alt="livguard">
-              <img src="./images/leader.jpg" alt="leader">
-              <img src="./images/eastman.png" alt="eastman">
+              <img loading="lazy" src="./images/ceat.png" alt="CEAT">
+              <img loading="lazy" src="./images/livguard.png" alt="livguard">
+              <img loading="lazy" src="./images/leader.jpg" alt="leader">
+              <!-- <img src="./images/eastman.png" alt="eastman">
+              <img src="./images/ambuja.png" alt="ambuja">
+              <img src="./images/captain.jpeg" alt="captain"> -->
             </div>
             <div class="slide">
-              <img src="./images/ceat.png" alt="CEAT">
+              <!-- <img src="./images/ceat.png" alt="CEAT">
               <img src="./images/livguard.png" alt="livguard">
-              <img src="./images/leader.jpg" alt="leader">
-              <img src="./images/eastman.png" alt="eastman">
+              <img src="./images/leader.jpg" alt="leader"> -->
+              <img loading="lazy" src="./images/eastman.png" alt="eastman">
+              <img loading="lazy" src="./images/ambuja.png" alt="ambuja">
+              <img loading="lazy" src="./images/captain.jpeg" alt="captain">
             </div>
           </div>
           <button class="next" onclick="nextSlide()">&#10095;</button>
+        </div>
+      </div>
+
+      <!-- Career section  -->
+      <div style="" class="container careerSection">
+        <div class="row">
+          <!-- left section  -->
+          <div class="col-xs-1 col-lg-4 careerLeft" style="padding: 0;">
+            <a href="" class="card">
+              <img src="./images/fakeCareer.jpg" alt="careerImg">
+              <div class="card-content">
+                <div class="category">Careers</div>
+                <div class="title">Beware of Job Scams</div>
+                <div class="description">
+                  We do not charge/accept any amount or security deposit from job seekers. Read disclaimer.
+                </div>
+                <div class="arrow">&rarr;</div>
+              </div>
+            </a>
+          </div>
+
+          <!-- right section  -->
+          <div class="col-lg-8 rightSection" style="">
+            <!-- <a href=""> -->
+              <div class="row">
+                <div class="col-xs-1 col-lg-12" style=" padding: 0;">
+                  <img src="./images/career.jpg" alt="career">
+                </div>
+              </div>
+            <!-- </a> -->
+
+            <div class="row careerJob">
+              <div class="card col-xs-1 col-lg-6 card_1">
+                <div class="label">IN NUMBERS</div>
+                <div class="icon">
+                  <i class="fas fa-users"></i>
+                </div>
+                <div class="number">1,028,000</div>
+                <div class="description">Employees at the Ashma group</div>
+                <div class="arrow">
+                  <i class="fas fa-arrow-right"></i>
+                </div>
+              </div>
+
+              <div class="card col-xs-1 col-lg-6 card_2">
+                <h4>CAREERS</h4>
+                <h2>Featured Jobs</h2>
+                <div class="job">
+                  <div class="job-title">Senior Manager, Warehousing</div>
+                  <div class="company">Tata Motors, Pune</div>
+                </div>
+                <div class="job">
+                  <div class="job-title">Design Engineer, Closures</div>
+                  <div class="company">Tata Technologies, Pune</div>
+                </div>
+                <div class="arrow" id="arrow">&rarr;</div>
+                <div class="login-btn" id="openLogin">Login</div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -686,6 +709,7 @@
         </div>
 
       </div>
+    </div>
   </section>
 
   <!-- FOOTER================================================================================ -->
@@ -1161,6 +1185,7 @@
   </div>
 
 </body>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <!-- <script src="./js/home.js"></script> -->
@@ -1169,10 +1194,60 @@
 <!-- AOS  -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+<!-- Gsap  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+
 
 <!-- Initialize Swiper -->
 <script>
   AOS.init();
+
+  window.addEventListener("scroll", function () {
+    var navbar = document.querySelector(".header");
+    if (window.scrollY > 50) {
+      navbar.classList.add("scrolled");
+    } else {
+      navbar.classList.remove("scrolled");
+    }
+  });
+
+  // header 
+  document.addEventListener("DOMContentLoaded", () => {
+    const navItems = document.querySelectorAll(".menu-items");
+    const submenuContainer = document.querySelector(".submenu-container");
+    const submenuContents = document.querySelectorAll(".submenu-content");
+
+    navItems.forEach(item => {
+      item.addEventListener("mouseenter", () => {
+        const menuName = item.getAttribute("data-menu");
+
+        // Show submenu container with animation
+        submenuContainer.style.display = "block";
+        gsap.to(submenuContainer, { opacity: 1, duration: 0.3 });
+
+        // Hide all submenus and show selected one
+        submenuContents.forEach(content => content.style.display = "none");
+        const selectedMenu = document.getElementById(menuName);
+        if (selectedMenu) {
+          selectedMenu.style.display = "block";
+          gsap.fromTo(selectedMenu, { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.3 });
+        }
+      });
+    });
+
+    // Hide submenu when mouse leaves the area
+    submenuContainer.addEventListener("mouseleave", () => {
+      gsap.to(submenuContainer, {
+        opacity: 0, duration: 0.3, onComplete: () => {
+          submenuContainer.style.display = "none";
+          submenuContents.forEach(content => content.style.display = "none");
+        }
+      });
+    });
+  })
+
+
   var swiper = new Swiper(".mySwiper", {
     effect: "creative",
     grabCursor: true,
@@ -1199,14 +1274,33 @@
     pagination: {
       el: ".swiper-pagination",
     },
+    on: {
+      slideChangeTransitionStart: function () {
+        let contents = document.querySelectorAll(".content");
+        contents.forEach((content) => {
+          content.style.opacity = "0";
+          content.style.transform = "translateY(50px)";
+        });
+
+      },
+      slideChangeTransitionEnd: function () {
+        let activeSlide = document.querySelector(".swiper-slide-active .content");
+        if (activeSlide) {
+          activeSlide.style.opacity = "1";
+          activeSlide.style.transform = "translateY(0)";
+        }
+      },
+    },
   });
+
+
   function toggleSidebar() {
     const sidebar = document.getElementById('sidebar');
     const menuBtn = document.querySelector(".menu-btn");
     const closeBtn = document.querySelector(".menu-btn1");
     sidebar.classList.toggle('show');
     // button.classList.toggle('active');
-     // Toggle Sidebar Open/Close
+    // Toggle Sidebar Open/Close
     if (sidebar.classList.contains("active")) {
       sidebar.classList.remove("active");
       menuBtn.style.display = "block";
@@ -1261,6 +1355,15 @@
   function closeModal(modalId) {
     document.getElementById(modalId).style.display = "none";
   }
+
+  // Career section 
+  // Arrow hover animation
+    document.getElementById("arrow").addEventListener("mouseover", function () {
+      this.style.transform = "translateX(10px)";
+    });
+    document.getElementById("arrow").addEventListener("mouseout", function () {
+      this.style.transform = "translateX(0px)";
+    });
 </script>
 
 </html>

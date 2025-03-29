@@ -12,237 +12,522 @@
   <link rel="stylesheet" href="./css/activities.css">
   <!-- SWIPER JS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <!-- GOOGLE FONTS  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&family=Liter&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Monomakh&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Todhri&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:wght@300..800&family=Oswald&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wdth,wght@0,75,100..900;1,75,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sigmar&family=Smooch+Sans:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-      rel="stylesheet">
+  <!-- GOOGLE FONTS  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&family=Liter&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Monomakh&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Todhri&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:wght@300..800&family=Oswald&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wdth,wght@0,75,100..900;1,75,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sigmar&family=Smooch+Sans:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
+  <!-- FONT AWSOME  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- AOS  -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
-  <section>
-    <!-- BANNER  -->
-    <div class="activities_banner">
-      <h2 class="merriweather-bold-italic">our activities</h2>
-      <div></div>
+  <!-- HEADER ===================================================================== -->
+  <div class="mainHeader">
+    <header class="header">
+      <div class="navbarSection">
+        <!-- NAVBAR ================================================================ -->
+        <navbar>
+          <div class="menuDetails">
+            <a href="./home.html">
+              <img src="./images/logo6.png" alt="logo">
+            </a>
+
+          </div>
+
+          <!-- COMPANY SOCIAL MENU  -->
+          <div class="compnay_details">
+            <ul class="navbarMenu">
+              <li class="menu-items">
+                <a href="./home.html" class="menu-link">home</a>
+              </li>
+              <li class="menu-items" data-menu="aboutUs">
+                <a href="./ourCompany.html" class="menu-link">about us</a>
+              </li>
+              <li class="menu-items" data-menu="ourWork">
+                <a href="" class="menu-link">our work</a>
+              </li>
+              <li class="menu-items" data-menu="gallery">
+                <a href="" class="menu-link">business</a>
+              </li>
+              <li class="menu-items">
+                <a href="./career.html" class="menu-link">career</a>
+              </li>
+              <li class="menu-items">
+                <a href="./contact.html" class="menu-link">contact us</a>
+              </li>
+            </ul>
+
+            <div class="company_header_socialMenu">
+              <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+              <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+
+            <div class="company_contact_details">
+              <div>
+                <a href="mailto:enquiry@ashmamotors.com">
+                  <i class="fa-regular fa-envelope"></i>
+                  enquiry@ashmamotors.com
+                </a>
+              </div>
+              <div>
+                <a href="tel:+918697185501">
+                  <i class="fa-solid fa-phone"></i>
+                  +91 8697185501 (Director)
+                </a>
+              </div>
+            </div>
+          </div>
+        </navbar>
+
+        <!-- Full-Screen Submenu -->
+        <div class="submenu-container" data-aos="fade-down-right">
+          <!-- about us  -->
+          <div class="submenu-content container" id="aboutUs" style="display: block; opacity: 1;">
+            <h2>ashma group of companies</h2>
+            <div class="blankUnderline"></div>
+            <h4>about the ashma group</h4>
+            <ul class="submenu-links">
+              <li>
+                <a href="./ourCompany.html" class="">our company</a>
+              </li>
+              <li>
+                <a href="./ourManagement.html">our management</a>
+              </li>
+            </ul>
+            <div class="blankUnderline"></div>
+
+            <!-- <h2>our clients</h2> -->
+            <div class="clinets_section container" data-aos="zoom-in">
+              <h2>Our Clients</h2>
+              <div class="slider-container">
+                <button class="prev" onclick="prevSlide()">&#10094;</button>
+                <div class="slider">
+                  <div class="slide">
+                    <img loading="lazy" src="./images/ceat.png" alt="CEAT">
+                    <img loading="lazy" src="./images/livguard.png" alt="livguard">
+                    <img loading="lazy" src="./images/leader.jpg" alt="leader">
+                    <!-- <img src="./images/eastman.png" alt="eastman">
+                                        <img src="./images/ambuja.png" alt="ambuja">
+                                        <img src="./images/captain.jpeg" alt="captain"> -->
+                  </div>
+                  <div class="slide">
+                    <!-- <img src="./images/ceat.png" alt="CEAT">
+                                        <img src="./images/livguard.png" alt="livguard">
+                                        <img src="./images/leader.jpg" alt="leader"> -->
+                    <img loading="lazy" src="./images/eastman.png" alt="eastman">
+                    <img loading="lazy" src="./images/ambuja.png" alt="ambuja">
+                    <img loading="lazy" src="./images/captain.jpeg" alt="captain">
+                  </div>
+                </div>
+                <button class="next" onclick="nextSlide()">&#10095;</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- our work  -->
+          <div class="submenu-content container" id="ourWork">
+            <h2>overview</h2>
+            <div class="blankUnderline"></div>
+            <h4>ashma group work</h4>
+            <ul class="submenu-links">
+              <li>
+                <a href="./galleryProject.html">our project</a>
+              </li>
+              <li>
+                <a href="./activities.html">our activities</a>
+              </li>
+            </ul>
+
+          </div>
+
+          <!-- gallery  -->
+          <div class="submenu-content container" id="gallery">
+            <h2>ashma group business overview</h2>
+            <div class="blankUnderline"></div>
+            <h4>ashma group business list</h4>
+            <div class="blankUnderline"></div>
+            <ul class="submenu-links">
+              <li>
+                <a href="./product.html">ashma e-rickshaw</a>
+              </li>
+              <li>
+                <a href="./futurePlan.html">ashma jute</a>
+              </li>
+              <li>
+                <a href="./futurePlan.html">ashma construction</a>
+              </li>
+            </ul>
+
+            <h4>Business Verticals</h4>
+            <div class="blankUnderline"></div>
+            <ul class="submenu-links">
+              <li>
+                <a href="./product.html">product & project</a>
+              </li>
+              <li>
+                <a href="./futurePlan.html">future plan</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- RESPONSIVE ================ -->
+      <div class="toggleMenu">
+        <div class="toggleMenu_icons">
+          <a href="./home.html">
+            <img src="./images/logo6.png" alt="logo">
+          </a>
+          <button class="menu-btn" onclick="toggleSidebar()">&#9776;</i></button>
+          <button class="menu-btn1" onclick="toggleSidebar()"><i class="fa-solid fa-xmark"></i></button>
+          <ul class="sidebar" id="sidebar">
+            <li class="menu-items">
+              <a href="" class="menu-link">home</a>
+            </li>
+            <li class="menu-items">
+              <a href="/about" class="menu-link" onclick="toggleSubmenu(event, 'submenu1')">
+                about us<i class="fa-solid fa-caret-down"></i>
+              </a>
+              <ul class="submenu" id="submenu1">
+                <li>
+                  <a href="./ourCompany.html" class="noto-serif-todhri-regular">our company</a>
+                </li>
+                <li>
+                  <a href="./ourManagement.html" class="noto-serif-todhri-regular">our management</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-items">
+              <a href="./product.html" class="menu-link" onclick="toggleSubmenu(event, 'submenu2')">our work<i
+                  class="fa-solid fa-caret-down"></i></a>
+              <ul class="submenu" id="submenu2">
+                <li>
+                  <a href="./product.html" class="noto-serif-todhri-regular">product & project</a>
+                </li>
+                <li>
+                  <a href="./futurePlan.html" class="noto-serif-todhri-regular">future plan</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-items">
+              <a href="" class="menu-link" onclick="toggleSubmenu(event, 'submenu3')">gallery<i
+                  class="fa-solid fa-caret-down"></i></a>
+              <ul class="submenu" id="submenu3">
+                <li>
+                  <a href="./galleryProject.html">our project</a>
+                </li>
+                <li>
+                  <a href="./activities.html">our activities</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-items">
+              <a href="./career.html" class="menu-link">career</a>
+            </li>
+            <li class="menu-items">
+              <a href="./contact.html" class="menu-link">contact us</a>
+            </li>
+            <!-- COMPANY SOCIAL MENU  -->
+            <li class="responsive_socialMenu">
+              <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+              <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+            </li>
+            <div class="responsive_company_details">
+              <div>
+                <a href="mailto:enquiry@ashmamotors.com">
+                  <i class="fa-regular fa-envelope"></i>
+                  enquiry@ashmamotors.com
+                </a>
+              </div>
+              <div>
+                <a href="tel:+918697185501">
+                  <i class="fa-solid fa-phone"></i>
+                  +91 8697185501 (Director)
+                </a>
+              </div>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- BANEER  -->
+    <div class="company_details_banner">
+      <div class="content">
+        <div class="tag">Ashma Stories</div>
+        <div class="title">Let The Games Begin</div>
+        <div class="desc">Ashma group's legacy in the promotion of sports endures to this day. A photo feature.</div>
+      </div>
     </div>
+
+  </div>
+
+  <section>
 
 
     <!-- IMAGE SECTION  -->
     <div class="img_section container">
       <!-- SlIDER_1 -->
-      <div class="slider">
+      <div class="slider" data-aos="zoom-in">
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img src="https://jalangroupofindustries.com/wp-content/uploads/2024/11/DSC_0136-600x600.jpg" alt="img">
+              <img loading="lazy" src="./images/activities_8.jpg" alt="img_1">
             </div>
             <div class="swiper-slide">
-              <img src="https://jalangroupofindustries.com/wp-content/uploads/2024/11/DSC_0032-600x600.jpg" alt="img">
+              <img loading="lazy" src="./images/activities_7.jpg" alt="img_2">
             </div>
             <div class="swiper-slide">
-              <img src="https://jalangroupofindustries.com/wp-content/uploads/2024/11/DSC_0032-600x600.jpg" alt="img">
-            </div>
-            <div class="swiper-slide">
-              <img src="https://jalangroupofindustries.com/wp-content/uploads/2024/11/DSC_0032-600x600.jpg" alt="img">
+              <img loading="lazy" src="./images/activities_6.jpg" alt="img_3">
             </div>
           </div>
         </div>
         <h3 class="merriweather-bold">Independence Day</h3>
       </div>
+
+
       <!-- SlIDER_2 -->
-      <div class="slider">
+      <div class="slider" data-aos="zoom-in">
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img src="https://jalangroupofindustries.com/wp-content/uploads/2024/11/DSC_0136-600x600.jpg" alt="img">
+              <img loading="lazy" src="./images/activities_9.jpg" alt="img_2">
             </div>
             <div class="swiper-slide">
-              <img src="https://jalangroupofindustries.com/wp-content/uploads/2024/11/DSC_0032-600x600.jpg" alt="img">
+              <img loading="lazy" src="./images/activities_3.jpg" alt="img_1">
             </div>
+
             <div class="swiper-slide">
-              <img src="https://jalangroupofindustries.com/wp-content/uploads/2024/11/DSC_0032-600x600.jpg" alt="img">
+              <img loading="lazy" src="./images/activities_1.jpg" alt="img_3">
             </div>
-            <div class="swiper-slide">
-              <img src="https://jalangroupofindustries.com/wp-content/uploads/2024/11/DSC_0032-600x600.jpg" alt="img">
-            </div>
+
           </div>
         </div>
         <h3 class="merriweather-bold">Independence Day</h3>
       </div>
+
       <!-- SlIDER_3 -->
-      <div class="slider">
+      <div class="slider" data-aos="zoom-in">
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img src="https://jalangroupofindustries.com/wp-content/uploads/2024/11/DSC_0136-600x600.jpg" alt="img">
+              <img loading="lazy" src="./images/activities_4.jpg" alt="img_1">
             </div>
             <div class="swiper-slide">
-              <img src="https://jalangroupofindustries.com/wp-content/uploads/2024/11/DSC_0032-600x600.jpg" alt="img">
+              <img loading="lazy" src="./images/activities_10.jpg" alt="img_2">
             </div>
             <div class="swiper-slide">
-              <img src="https://jalangroupofindustries.com/wp-content/uploads/2024/11/DSC_0032-600x600.jpg" alt="img">
+              <img loading="lazy" src="./images/activities_5.jpg" alt="img_1">
             </div>
             <div class="swiper-slide">
-              <img src="https://jalangroupofindustries.com/wp-content/uploads/2024/11/DSC_0032-600x600.jpg" alt="img">
+              <img loading="lazy" src="./images/activities_2.jpg" alt="img_2">
             </div>
+            <div class="swiper-slide">
+              <img loading="lazy" src="./images/activities_11.jpg" alt="img_3">
+            </div>
+
           </div>
         </div>
         <h3 class="merriweather-bold">Independence Day</h3>
       </div>
-      <!-- SlIDER_4 -->
-      <div class="slider">
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="https://jalangroupofindustries.com/wp-content/uploads/2024/11/DSC_0136-600x600.jpg" alt="img">
-            </div>
-            <div class="swiper-slide">
-              <img src="https://jalangroupofindustries.com/wp-content/uploads/2024/11/DSC_0032-600x600.jpg" alt="img">
-            </div>
-            <div class="swiper-slide">
-              <img src="https://jalangroupofindustries.com/wp-content/uploads/2024/11/DSC_0032-600x600.jpg" alt="img">
-            </div>
-            <div class="swiper-slide">
-              <img src="https://jalangroupofindustries.com/wp-content/uploads/2024/11/DSC_0032-600x600.jpg" alt="img">
-            </div>
+
+
+
+
+  </section>
+
+  <!-- FOOTER================================================================================ -->
+  <footer class="footer">
+    <div class="footer_innerSection container">
+      <!-- company product details  -->
+      <div class="footer_product_details">
+        <div>
+          <!-- <h3>product</h3> -->
+          <div class="product_section">
+            <h3>Ashma E-rickshaw</h3>
+            <ul class="footer_eRikshaw">
+              <li class="item"><a href="">E-Rickshaw</a></li>
+              <li class="item"><a href="">E-loader</a></li>
+            </ul>
+          </div>
+          <div class="product_section">
+            <h3><a href="">Ashma jute mill</a></h3>
+          </div>
+          <div class="product_section">
+            <h3><a href="">Ashma constraction</a></h3>
+          </div>
+
+        </div>
+        <div class="footer_usefulLinks">
+          <div class="product_section">
+            <h3>dealership</h3>
+            <ul class="footer_eRikshaw">
+              <li class="item"><a href="">become a dealer</a></li>
+              <li class="item"><a href="">FAQs</a></li>
+            </ul>
+          </div>
+          <div class="product_section">
+            <h3>useful links</h3>
+            <ul class="footer_eRikshaw">
+              <li class="item"><a href="">overview</a></li>
+              <li class="item"><a href="">our works</a></li>
+              <li class="item"><a href="">career</a></li>
+              <li class="item"><a href="">our team</a></li>
+              <li class="item"><a href="">our management</a></li>
+              <li class="item"><a href="">contact us</a></li>
+            </ul>
+          </div>
+          <div class="product_section">
+            <h3>shop</h3>
+            <ul class="footer_eRikshaw">
+              <li class="item"><a href="">Accessories</a></li>
+              <li class="item"><a href="">Merchandise</a></li>
+            </ul>
           </div>
         </div>
-        <h3 class="merriweather-bold">Independence Day</h3>
       </div>
-      <!-- SlIDER_5 -->
-      <div class="slider">
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="https://jalangroupofindustries.com/wp-content/uploads/2024/11/DSC_0136-600x600.jpg" alt="img">
+
+      <!-- company contact info  -->
+      <div class="footer_company_info">
+        <div class="comapny_contact">
+          <div class="footerContact">
+            <h4>email</h4>
+            <div>
+              <a href="mailto:enquiry@ashmamotors.com">
+                <i class="fa-regular fa-envelope"></i>
+                enquiry@ashmamotors.com
+              </a>
             </div>
-            <div class="swiper-slide">
-              <img src="https://jalangroupofindustries.com/wp-content/uploads/2024/11/DSC_0032-600x600.jpg" alt="img">
-            </div>
-            <div class="swiper-slide">
-              <img src="https://jalangroupofindustries.com/wp-content/uploads/2024/11/DSC_0032-600x600.jpg" alt="img">
-            </div>
-            <div class="swiper-slide">
-              <img src="https://jalangroupofindustries.com/wp-content/uploads/2024/11/DSC_0032-600x600.jpg" alt="img">
+          </div>
+          <div class="footerContact">
+            <h4>contact</h4>
+            <div>
+              <a href="tel:+918697185501">
+                <i class="fa-solid fa-phone"></i>
+                +91 8697185501 (Director)
+              </a>
             </div>
           </div>
         </div>
-        <h3 class="merriweather-bold">Independence Day</h3>
+
+        <div class="footerSocialConnect">
+          <h4>follow us</h4>
+          <div class="company_footer_socialMenu">
+            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
       </div>
-      <!-- SlIDER_6 -->
-      <div class="slider">
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="https://jalangroupofindustries.com/wp-content/uploads/2024/11/DSC_0136-600x600.jpg" alt="img">
-            </div>
-            <div class="swiper-slide">
-              <img src="https://jalangroupofindustries.com/wp-content/uploads/2024/11/DSC_0032-600x600.jpg" alt="img">
-            </div>
-            <div class="swiper-slide">
-              <img src="https://jalangroupofindustries.com/wp-content/uploads/2024/11/DSC_0032-600x600.jpg" alt="img">
-            </div>
-            <div class="swiper-slide">
-              <img src="https://jalangroupofindustries.com/wp-content/uploads/2024/11/DSC_0032-600x600.jpg" alt="img">
-            </div>
-          </div>
-        </div>
-        <h3 class="merriweather-bold">Independence Day</h3>
-      </div>
-      <!-- SlIDER_7 -->
-      <div class="slider">
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="https://jalangroupofindustries.com/wp-content/uploads/2024/11/DSC_0136-600x600.jpg" alt="img">
-            </div>
-            <div class="swiper-slide">
-              <img src="https://jalangroupofindustries.com/wp-content/uploads/2024/11/DSC_0032-600x600.jpg" alt="img">
-            </div>
-            <div class="swiper-slide">
-              <img src="https://jalangroupofindustries.com/wp-content/uploads/2024/11/DSC_0032-600x600.jpg" alt="img">
-            </div>
-            <div class="swiper-slide">
-              <img src="https://jalangroupofindustries.com/wp-content/uploads/2024/11/DSC_0032-600x600.jpg" alt="img">
-            </div>
-          </div>
-        </div>
-        <h3 class="merriweather-bold">Independence Day</h3>
-      </div>
-      <!-- SlIDER_8 -->
-      <div class="slider">
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="https://jalangroupofindustries.com/wp-content/uploads/2024/11/DSC_0136-600x600.jpg" alt="img">
-            </div>
-            <div class="swiper-slide">
-              <img src="https://jalangroupofindustries.com/wp-content/uploads/2024/11/DSC_0032-600x600.jpg" alt="img">
-            </div>
-            <div class="swiper-slide">
-              <img src="https://jalangroupofindustries.com/wp-content/uploads/2024/11/DSC_0032-600x600.jpg" alt="img">
-            </div>
-            <div class="swiper-slide">
-              <img src="https://jalangroupofindustries.com/wp-content/uploads/2024/11/DSC_0032-600x600.jpg" alt="img">
-            </div>
-          </div>
-        </div>
-        <h3 class="merriweather-bold">Independence Day</h3>
-      </div>
-      <!-- SlIDER_9 -->
-      <div class="slider">
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="https://jalangroupofindustries.com/wp-content/uploads/2024/11/DSC_0136-600x600.jpg" alt="img">
-            </div>
-            <div class="swiper-slide">
-              <img src="https://jalangroupofindustries.com/wp-content/uploads/2024/11/DSC_0032-600x600.jpg" alt="img">
-            </div>
-            <div class="swiper-slide">
-              <img src="https://jalangroupofindustries.com/wp-content/uploads/2024/11/DSC_0032-600x600.jpg" alt="img">
-            </div>
-            <div class="swiper-slide">
-              <img src="https://jalangroupofindustries.com/wp-content/uploads/2024/11/DSC_0032-600x600.jpg" alt="img">
-            </div>
-          </div>
-        </div>
-        <h3 class="merriweather-bold">Independence Day</h3>
-      </div>
-      <!-- SlIDER_10 -->
-      <div class="slider">
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="https://jalangroupofindustries.com/wp-content/uploads/2024/11/DSC_0136-600x600.jpg" alt="img">
-            </div>
-            <div class="swiper-slide">
-              <img src="https://jalangroupofindustries.com/wp-content/uploads/2024/11/DSC_0032-600x600.jpg" alt="img">
-            </div>
-            <div class="swiper-slide">
-              <img src="https://jalangroupofindustries.com/wp-content/uploads/2024/11/DSC_0032-600x600.jpg" alt="img">
-            </div>
-            <div class="swiper-slide">
-              <img src="https://jalangroupofindustries.com/wp-content/uploads/2024/11/DSC_0032-600x600.jpg" alt="img">
-            </div>
-          </div>
-        </div>
-        <h3 class="merriweather-bold">Independence Day</h3>
+      <!-- branding -->
+      <div class="footerBranding">
+        <p>© ashma group. All Rights Reserved</p>
+        <a href="">Privacy Policy</a>
+        <a href="">Disclaimer</a>
+        <a href="">Cookie Policy</a>
       </div>
     </div>
-  </section>
+  </footer>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<!-- AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<!-- Gsap  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
 
 <script>
+  AOS.init();
+
+  window.addEventListener("scroll", function () {
+    var navbar = document.querySelector(".header");
+    if (window.scrollY > 50) {
+      navbar.classList.add("scrolled");
+    } else {
+      navbar.classList.remove("scrolled");
+    }
+  });
+
+  // header 
+  document.addEventListener("DOMContentLoaded", () => {
+    const navItems = document.querySelectorAll(".menu-items");
+    const submenuContainer = document.querySelector(".submenu-container");
+    const submenuContents = document.querySelectorAll(".submenu-content");
+
+    navItems.forEach(item => {
+      item.addEventListener("mouseenter", () => {
+        const menuName = item.getAttribute("data-menu");
+
+        // Show submenu container with animation
+        submenuContainer.style.display = "block";
+        gsap.to(submenuContainer, { opacity: 1, duration: 0.3 });
+
+        // Hide all submenus and show selected one
+        submenuContents.forEach(content => content.style.display = "none");
+        const selectedMenu = document.getElementById(menuName);
+        if (selectedMenu) {
+          selectedMenu.style.display = "block";
+          gsap.fromTo(selectedMenu, { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.3 });
+        }
+      });
+    });
+
+    // Hide submenu when mouse leaves the area
+    submenuContainer.addEventListener("mouseleave", () => {
+      gsap.to(submenuContainer, {
+        opacity: 0, duration: 0.3, onComplete: () => {
+          submenuContainer.style.display = "none";
+          submenuContents.forEach(content => content.style.display = "none");
+        }
+      });
+    });
+  })
+
+
+  // header toggle 
+  function toggleSidebar() {
+    const sidebar = document.getElementById('sidebar');
+    const menuBtn = document.querySelector(".menu-btn");
+    const closeBtn = document.querySelector(".menu-btn1");
+    sidebar.classList.toggle('show');
+    // button.classList.toggle('active');
+    // Toggle Sidebar Open/Close
+    if (sidebar.classList.contains("active")) {
+      sidebar.classList.remove("active");
+      menuBtn.style.display = "block";
+      closeBtn.style.display = "none";
+    } else {
+      sidebar.classList.add("active");
+      menuBtn.style.display = "none";
+      closeBtn.style.display = "block";
+    }
+  }
+  function toggleSubmenu(event, submenuId) {
+    event.preventDefault();
+    const submenu = document.getElementById(submenuId);
+    submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+  }
+
+
   var swiper6 = new Swiper(".mySwiper", {
     grabCursor: true,
-    effect: "creative",
+    effect: "cards",
     spaceBetween: 30,
     autoplay: {
       delay: 2500,

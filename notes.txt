@@ -21,3 +21,145 @@ banner_img: 50vw
 class="spec-table"
 
 <i class="fa-solid fa-circle-arrow-right"></i>
+
+
+
+box-shadow: 0 0 8px 0 rgba(177, 177, 177, 0.3);
+
+                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+
+                     <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <!-- <div class="swiper-slide">
+          <img loading="lazy" src="./images/slider_5.jpg" />
+          <img src="./images/layer.png" alt="layer" class="layer">
+        </div> -->
+        <div class="swiper-slide">
+          <img loading="lazy" src="./images/slider_11.png" />
+          <!-- <img src="./images/layer.png" alt="layer" class="layer"> -->
+        </div>
+        <div class="swiper-slide">
+          <img loading="lazy" src="./images/slider_11.png" />
+          <!-- <img src="./images/layer.png" alt="layer" class="layer"> -->
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+
+
+    ./ashmaErickshaw.html
+    ./ashmaJuteMill.html
+    ./ashmaConstraction.html
+
+
+
+ <div class="container" data-aos="zoom-in">
+        <h2 class="comapny_heading">OUR GROUP OF COMPANIES</h2>
+        <div class=" company_group">
+          <!-- comany_1 -->
+          <div class="flip-card" data-aos="zoom-in">
+            <div class="flip-card-inner">
+              <div class="flip-card-front flip-card-front1">
+                
+              </div>
+            </div>
+            <h4 class="merriweather-bold">ashma e-rickshaw</h4>
+          </div>
+          <!-- company_2  -->
+          <div class="flip-card" data-aos="zoom-in">
+            <div class="flip-card-inner">
+              <div class="flip-card-front flip-card-front2">
+                
+              </div>
+            </div>
+            <h4 class="merriweather-bold">ashma jute mill</h4>
+          </div>
+          <!-- company_3  -->
+          <div class="flip-card" data-aos="zoom-in">
+            <div class="flip-card-inner">
+              <div class="flip-card-front flip-card-front3">
+                
+              </div>
+
+            </div>
+            <h4 class="merriweather-bold">ashma construction</h4>
+          </div>
+
+
+
+          <!-- <div class="flip-card" data-aos="zoom-in">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <h4 class="merriweather-bold">Ramesh Steel Industries - A Partnership Firm</h4>
+              </div>
+              <div class="flip-card-back">
+                <p class="merriweather-regular ">Started in 1994 at Raipur, in the mineral rich state of Chhattisgarh,
+                  Ramesh Steel Industries is today known for its
+                  efficient operations, top quality output and efficient use of resources.</p>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card" data-aos="zoom-in">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <h4 class="merriweather-bold">Ramesh Steel Industries - A Partnership Firm</h4>
+              </div>
+              <div class="flip-card-back">
+                <p class="merriweather-regular ">Started in 1994 at Raipur, in the mineral rich state of Chhattisgarh,
+                  Ramesh Steel Industries is today known for its
+                  efficient operations, top quality output and efficient use of resources.</p>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card" data-aos="zoom-in">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <h4 class="merriweather-bold">Ramesh Steel Industries - A Partnership Firm</h4>
+              </div>
+              <div class="flip-card-back">
+                <p class="merriweather-regular ">Started in 1994 at Raipur, in the mineral rich state of Chhattisgarh,
+                  Ramesh Steel Industries is today known for its
+                  efficient operations, top quality output and efficient use of resources.</p>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card" data-aos="zoom-in">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <h4 class="merriweather-bold">Ramesh Steel Industries - A Partnership Firm</h4>
+              </div>
+              <div class="flip-card-back">
+                <p class="merriweather-regular ">Started in 1994 at Raipur, in the mineral rich state of Chhattisgarh,
+                  Ramesh Steel Industries is today known for its
+                  efficient operations, top quality output and efficient use of resources.</p>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card" data-aos="zoom-in">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <h4 class="merriweather-bold">Ramesh Steel Industries - A Partnership Firm</h4>
+              </div>
+              <div class="flip-card-back">
+                <p class="merriweather-regular ">Started in 1994 at Raipur, in the mineral rich state of Chhattisgarh,
+                  Ramesh Steel Industries is today known for its
+                  efficient operations, top quality output and efficient use of resources.</p>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card" data-aos="zoom-in">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <h4 class="merriweather-bold">Ramesh Steel Industries - A Partnership Firm</h4>
+              </div>
+              <div class="flip-card-back">
+                <p class="merriweather-regular ">Started in 1994 at Raipur, in the mineral rich state of Chhattisgarh,
+                  Ramesh Steel Industries is today known for its
+                  efficient operations, top quality output and efficient use of resources.</p>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
